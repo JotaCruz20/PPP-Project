@@ -14,7 +14,6 @@
     <list default="true" id="ba406bb2-d4f2-47e4-a216-45e9e0dc6497" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/main.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registo" beforeDir="false" afterPath="$PROJECT_DIR$/registo" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state relative-caret-position="346">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -49,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Linked_lists.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
+            <state>
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -59,9 +58,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Linked_lists.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -159,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556221464335</updated>
-      <workItem from="1556221465634" duration="3116000" />
+      <workItem from="1556221465634" duration="5228000" />
     </task>
     <task id="LOCAL-00001" summary="Test1">
       <created>1556221535043</created>
@@ -168,11 +165,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556221535043</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Login Feito">
+      <created>1556224809842</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556224809842</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Login Feito">
+      <created>1556224821136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556224821136</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3116000" />
+    <option name="totallyTimeSpent" value="5228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -185,10 +196,10 @@
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Messages" order="4" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -205,7 +216,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test1" />
+    <MESSAGE value="Login Feito" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Feito" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hot">
@@ -217,26 +229,24 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Linked_lists.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linked_lists.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/teste/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linked_lists.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linked_lists.h">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/registo">
       <provider selected="true" editor-type-id="text-editor">
@@ -247,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state relative-caret-position="346">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
