@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Trabalho_Final.dir/main.c.o  -o Trabalho_Final 
