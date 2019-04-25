@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/main.c
+stdio.h
+-
+string.h
+-
+errno.h
+-
+
