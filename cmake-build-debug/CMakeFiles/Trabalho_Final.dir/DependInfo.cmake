@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/hak/Desktop/PPP/Trabalho Final/main.c" "/home/hak/Desktop/PPP/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/main.c.o"
+  "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/main.c" "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -40,7 +40,7 @@ void login(FILE *file){
     while(fgets(read,100,file)!=NULL){
         fscanf(file,"%s", user);
 
-        if(!strcmp(string, student))==0//if match found
+        //if(!strcmp(string, student))==0//if match found
     }
 }
 

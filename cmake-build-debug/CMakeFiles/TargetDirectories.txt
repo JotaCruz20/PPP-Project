@@ -1,3 +1,3 @@
-/home/hak/Desktop/PPP/Trabalho Final/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/hak/Desktop/PPP/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir
-/home/hak/Desktop/PPP/Trabalho Final/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles/Trabalho_Final.dir
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles/edit_cache.dir
