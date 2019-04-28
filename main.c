@@ -4,7 +4,7 @@
 
 int logtester(FILE *file, char name[50]){//serve para ver se o nome dado existe no file
     char read[100],string[50];
-    char *ptr;
+    char *ptr;//aponta para o caracter do ficheiro que está a ser lido no momento
     int i,count=0;
     if(file==NULL){
         printf("Erro %s", strerror(errno));
@@ -19,7 +19,7 @@ int logtester(FILE *file, char name[50]){//serve para ver se o nome dado existe 
             else{
                 string[count]='\0';
                 if(strcmp(string,name)==0){
-                    return 1;
+                    return 1;//caso se verifique a função termina e devolve o valor 1
                 }
                 count=0;//para começar string do 0
             }
