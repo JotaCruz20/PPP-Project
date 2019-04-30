@@ -2,7 +2,9 @@
 #include <string.h>
 #include <errno.h>
 
-int logtester(FILE *file, char name[50]){//serve para ver se o nome dado existe no file
+int logtester(char name[50]){//serve para ver se o nome dado existe no file
+    FILE *file;
+    file=fopen("registo.txt","r");
     char read[100],string[50];
     char *ptr;
     int i,count=0;
@@ -25,12 +27,13 @@ int logtester(FILE *file, char name[50]){//serve para ver se o nome dado existe 
             }
         }
     }
+    fclose(file);
     return 0;
 }
 
 void registo(FILE *file1, FILE *file2){//funcao para o registo
     int len,log;
-    char name[50],cid[20],data[12],tele[9];
+    char name[50],cid[20],data[12],tele[10];
     if(file1==NULL){
         printf("Erro %s", strerror(errno));
     }
@@ -39,7 +42,7 @@ void registo(FILE *file1, FILE *file2){//funcao para o registo
         fgets(name, 50, stdin);
         len = strlen(name);
         name[len - 1] = '\0';//Tirar o paragrafo
-        log=logtester(file2,name);//Para confirmar que nao existe um user com o mesmo username
+        log=logtester(name);//Para confirmar que nao existe um user com o mesmo username
         if(log!=0){
             printf("\nO username ja esta em uso, use outro.\n");
         }
@@ -59,7 +62,7 @@ void registo(FILE *file1, FILE *file2){//funcao para o registo
     fputs(data, file1);
     fputs(" ", file1);
     printf("Indique: nº telemovel-\n");//Nº telemovel
-    fgets(tele, 9, stdin);
+    fgets(tele, 10, stdin);
     fputs(tele, file1);
     fputs("\n", file1);
 }
@@ -70,7 +73,7 @@ int login(FILE *file){//funcao para o login
     fgets(user,50,stdin);
     len=strlen(user);
     user[len-1]='\0';//tirar o \n da string para se poder comparar
-    logf=logtester(file,user);
+    logf=logtester(user);
     if(logf==1){
         return 1;
     }
@@ -88,8 +91,8 @@ int main() {
         scanf("%d", &n);
         getchar();//Para nao dar conflito com o fgets
     }while(n!=1 && n!=2);
-    fra=fopen("/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/registo","a");
-    frr=fopen("/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/registo","r");
+    fra=fopen("registo.txt","a");
+    frr=fopen("registo.txt","r");
     if (n == 1){
         log=login(frr);
     }
