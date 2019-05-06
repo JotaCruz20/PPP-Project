@@ -70,17 +70,92 @@ CMakeFiles/Trabalho_Final.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/main.c" -o CMakeFiles/Trabalho_Final.dir/main.c.s
 
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.o: CMakeFiles/Trabalho_Final.dir/flags.make
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.o: ../Linked\ Lists/PDI\ Lists.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.o   -c "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.c"
+
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.c" > CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.i
+
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.c" -o CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.s
+
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.o: CMakeFiles/Trabalho_Final.dir/flags.make
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.o: ../Linked\ Lists/Locais\ Lists.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.o   -c "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.c"
+
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.c" > CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.i
+
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.c" -o CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.s
+
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.o: CMakeFiles/Trabalho_Final.dir/flags.make
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.o: ../Linked\ Lists/Registo\ Lists.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.o   -c "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.c"
+
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.c" > CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.i
+
+CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.c" -o CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.s
+
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.o: CMakeFiles/Trabalho_Final.dir/flags.make
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.o: ../Funcoes/Funcoes\ Locais-Pdi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.o   -c "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.c"
+
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.c" > CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.i
+
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.c" -o CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.s
+
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.o: CMakeFiles/Trabalho_Final.dir/flags.make
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.o: ../Funcoes/Funcoes\ Registo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.o   -c "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.c"
+
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.c" > CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.i
+
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.c" -o CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.s
+
 # Object files for target Trabalho_Final
 Trabalho_Final_OBJECTS = \
-"CMakeFiles/Trabalho_Final.dir/main.c.o"
+"CMakeFiles/Trabalho_Final.dir/main.c.o" \
+"CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.o" \
+"CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.o" \
+"CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.o" \
+"CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.o" \
+"CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.o"
 
 # External object files for target Trabalho_Final
 Trabalho_Final_EXTERNAL_OBJECTS =
 
 Trabalho_Final: CMakeFiles/Trabalho_Final.dir/main.c.o
+Trabalho_Final: CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.o
+Trabalho_Final: CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.o
+Trabalho_Final: CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.o
+Trabalho_Final: CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.o
+Trabalho_Final: CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.o
 Trabalho_Final: CMakeFiles/Trabalho_Final.dir/build.make
 Trabalho_Final: CMakeFiles/Trabalho_Final.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Trabalho_Final"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Trabalho_Final"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Trabalho_Final.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

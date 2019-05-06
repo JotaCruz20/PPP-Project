@@ -123,6 +123,141 @@ Trabalho_Final/fast:
 	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/build
 .PHONY : Trabalho_Final/fast
 
+Funcoes/Funcoes_Locais-Pdi.o: Funcoes/Funcoes_Locais-Pdi.c.o
+
+.PHONY : Funcoes/Funcoes_Locais-Pdi.o
+
+# target to build an object file
+Funcoes/Funcoes_Locais-Pdi.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.o
+.PHONY : Funcoes/Funcoes_Locais-Pdi.c.o
+
+Funcoes/Funcoes_Locais-Pdi.i: Funcoes/Funcoes_Locais-Pdi.c.i
+
+.PHONY : Funcoes/Funcoes_Locais-Pdi.i
+
+# target to preprocess a source file
+Funcoes/Funcoes_Locais-Pdi.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.i
+.PHONY : Funcoes/Funcoes_Locais-Pdi.c.i
+
+Funcoes/Funcoes_Locais-Pdi.s: Funcoes/Funcoes_Locais-Pdi.c.s
+
+.PHONY : Funcoes/Funcoes_Locais-Pdi.s
+
+# target to generate assembly for a file
+Funcoes/Funcoes_Locais-Pdi.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Locais-Pdi.c.s
+.PHONY : Funcoes/Funcoes_Locais-Pdi.c.s
+
+Funcoes/Funcoes_Registo.o: Funcoes/Funcoes_Registo.c.o
+
+.PHONY : Funcoes/Funcoes_Registo.o
+
+# target to build an object file
+Funcoes/Funcoes_Registo.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.o
+.PHONY : Funcoes/Funcoes_Registo.c.o
+
+Funcoes/Funcoes_Registo.i: Funcoes/Funcoes_Registo.c.i
+
+.PHONY : Funcoes/Funcoes_Registo.i
+
+# target to preprocess a source file
+Funcoes/Funcoes_Registo.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.i
+.PHONY : Funcoes/Funcoes_Registo.c.i
+
+Funcoes/Funcoes_Registo.s: Funcoes/Funcoes_Registo.c.s
+
+.PHONY : Funcoes/Funcoes_Registo.s
+
+# target to generate assembly for a file
+Funcoes/Funcoes_Registo.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.s
+.PHONY : Funcoes/Funcoes_Registo.c.s
+
+Linked_Lists/Locais_Lists.o: Linked_Lists/Locais_Lists.c.o
+
+.PHONY : Linked_Lists/Locais_Lists.o
+
+# target to build an object file
+Linked_Lists/Locais_Lists.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.o
+.PHONY : Linked_Lists/Locais_Lists.c.o
+
+Linked_Lists/Locais_Lists.i: Linked_Lists/Locais_Lists.c.i
+
+.PHONY : Linked_Lists/Locais_Lists.i
+
+# target to preprocess a source file
+Linked_Lists/Locais_Lists.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.i
+.PHONY : Linked_Lists/Locais_Lists.c.i
+
+Linked_Lists/Locais_Lists.s: Linked_Lists/Locais_Lists.c.s
+
+.PHONY : Linked_Lists/Locais_Lists.s
+
+# target to generate assembly for a file
+Linked_Lists/Locais_Lists.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.s
+.PHONY : Linked_Lists/Locais_Lists.c.s
+
+Linked_Lists/PDI_Lists.o: Linked_Lists/PDI_Lists.c.o
+
+.PHONY : Linked_Lists/PDI_Lists.o
+
+# target to build an object file
+Linked_Lists/PDI_Lists.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.o
+.PHONY : Linked_Lists/PDI_Lists.c.o
+
+Linked_Lists/PDI_Lists.i: Linked_Lists/PDI_Lists.c.i
+
+.PHONY : Linked_Lists/PDI_Lists.i
+
+# target to preprocess a source file
+Linked_Lists/PDI_Lists.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.i
+.PHONY : Linked_Lists/PDI_Lists.c.i
+
+Linked_Lists/PDI_Lists.s: Linked_Lists/PDI_Lists.c.s
+
+.PHONY : Linked_Lists/PDI_Lists.s
+
+# target to generate assembly for a file
+Linked_Lists/PDI_Lists.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Lists.c.s
+.PHONY : Linked_Lists/PDI_Lists.c.s
+
+Linked_Lists/Registo_Lists.o: Linked_Lists/Registo_Lists.c.o
+
+.PHONY : Linked_Lists/Registo_Lists.o
+
+# target to build an object file
+Linked_Lists/Registo_Lists.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.o
+.PHONY : Linked_Lists/Registo_Lists.c.o
+
+Linked_Lists/Registo_Lists.i: Linked_Lists/Registo_Lists.c.i
+
+.PHONY : Linked_Lists/Registo_Lists.i
+
+# target to preprocess a source file
+Linked_Lists/Registo_Lists.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.i
+.PHONY : Linked_Lists/Registo_Lists.c.i
+
+Linked_Lists/Registo_Lists.s: Linked_Lists/Registo_Lists.c.s
+
+.PHONY : Linked_Lists/Registo_Lists.s
+
+# target to generate assembly for a file
+Linked_Lists/Registo_Lists.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Registo_Lists.c.s
+.PHONY : Linked_Lists/Registo_Lists.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Trabalho_Final"
 	@echo "... edit_cache"
+	@echo "... Funcoes/Funcoes_Locais-Pdi.o"
+	@echo "... Funcoes/Funcoes_Locais-Pdi.i"
+	@echo "... Funcoes/Funcoes_Locais-Pdi.s"
+	@echo "... Funcoes/Funcoes_Registo.o"
+	@echo "... Funcoes/Funcoes_Registo.i"
+	@echo "... Funcoes/Funcoes_Registo.s"
+	@echo "... Linked_Lists/Locais_Lists.o"
+	@echo "... Linked_Lists/Locais_Lists.i"
+	@echo "... Linked_Lists/Locais_Lists.s"
+	@echo "... Linked_Lists/PDI_Lists.o"
+	@echo "... Linked_Lists/PDI_Lists.i"
+	@echo "... Linked_Lists/PDI_Lists.s"
+	@echo "... Linked_Lists/Registo_Lists.o"
+	@echo "... Linked_Lists/Registo_Lists.i"
+	@echo "... Linked_Lists/Registo_Lists.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

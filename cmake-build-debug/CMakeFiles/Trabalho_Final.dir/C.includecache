@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.h
+
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.h
+../Linked Lists/Registo Lists.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.h
+../Linked Lists/PDI Lists.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
+../Linked Lists/Locais Lists.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
+stdio.h
+-
+
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
+PDI Lists.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
+
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
+
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.h
+
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/main.c
 stdio.h
 -
@@ -13,4 +33,14 @@ string.h
 -
 errno.h
 -
+Funcoes/Funcoes Locais-Pdi.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.h
+Funcoes/Funcoes Registo.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.h
+Linked Lists/Locais Lists.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
+Linked Lists/Registo Lists.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.h
+Linked Lists/PDI Lists.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
 
