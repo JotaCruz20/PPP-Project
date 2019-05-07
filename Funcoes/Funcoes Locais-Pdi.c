@@ -39,9 +39,10 @@ void imprime_locais_e_pdis() {
             else {
                 insere_lista_pdi(aux->pontos, nome, horario, descricao);
             }
-        }        s=fgetc(f);
-
+        }
+        s=fgetc(f);
     }while(s !=EOF);
+    sort_loc(loc);
     imprime_lista_loc(loc);
     fclose(f);
 }

@@ -1,16 +1,16 @@
-<Aveiro:
--Parque da Macaca;NE;tambem conhecido como Parque Infante Dom Pedro, tem bastante biodiversidade e espacos amplos para um bom piquenique
--Praia da Barra;NE;praia onde a Ria se liga ao mar e onde se pode visitar o seu monumental Farol
--Praia da Costa Nova;NE;uma das mais marcantes praias portuguesas com as cores das tipicas casas utilizadas pelos pescadores
--Ria de Aveiro;NE;lagoa costeira de baixa profundidade por onde se pode partir num moliceiro para uma nova perspetiva da cidade
--Se de Aveiro;9/19h;o culto mariano ligado às gentes de aveiro
+<Tavira:
+-Igreja de Santa Maria do Castelo;10/17;igreja matriz da cidade que ha de ter sido construida apos a conquista de tavira aos mouros
+-Castelo de Tavira;8/17;apesar de ja ter sofrido varias alteracoes ao longo do tempo por diferentes povos continua um marco da cidade a visitar
+-Centro de Ciencia Viva de Tavira;10/18;espaco interativo que se explora temas ligados a energia e a agua
+-Mercado Municipal de Tavira;7/16;mercado municipal com fruta e alimentos de excelente qualidade
+-Ilha de Tavira;NE;ilha deserta e arenosa que onde tambem podemos encontrar a praia do barril
 >
-<Cascais:
--Boca do Inferno;NE;formacao unica a beira da praia de cascais
--Casa das Historias Paula Rego;10/18h;museu de arte com a obra da artista portuguesa
--Marina de Cascais;NE;espaço nobre de lazer e conforto a todos o que o vivenciam
--Monte Estoril;NE;zona mais alta e luxuosa de cascais e estoril
--Praia de Carcavelos;NE;praia mais popular da zona de lisboa com magnificas intalacoes
+<Guimaraes:
+-Castelo de Guimaraes;10/18;castelo nasceu e viveu o primeiro rei de portugal
+-Largo do Toural;NE;consiferado o coracao da cidade é uma das pracas mais importantes de Guimaraes
+-Paco dos Duques de Braganca;10/18;monumento nacional onde viveram os duqes de braganca e onde se podem ver exxpostas varias reliquias da epoca dos Descobrimentos Portugueses
+-Padrao do Salado;NE;padrao comemorativo da batalha do Salado localizado numa das zonas mais antigas da cidade
+-Santuario da Penha;9/18;uma obra emblematica de guimaraes com uma singular beleza e valia religiosa
 >
 <Coimbra:
 -Cabra;10/18h;uma visita ao icone da universidade de coimbra
@@ -26,6 +26,13 @@
 -Praca do Giraldo;NE;onde todos os caminhos em Evora vão dar, seja pelas arcadas, seja pelos caminhos calcetados da cidade
 -Templo de Diana;NE;um icone da cidade e dos poucos vestigios da ocupacao romana em portugal que se manteve ao longo do tempo
 >
+<Cascais:
+-Boca do Inferno;NE;formacao unica a beira da praia de cascais
+-Casa das Historias Paula Rego;10/18h;museu de arte com a obra da artista portuguesa
+-Marina de Cascais;NE;espaço nobre de lazer e conforto a todos o que o vivenciam
+-Monte Estoril;NE;zona mais alta e luxuosa de cascais e estoril
+-Praia de Carcavelos;NE;praia mais popular da zona de lisboa com magnificas intalacoes
+>
 <Faro:
 -Ilha Deserta;NE;uma ilha deserta, tal como o nome indica, com a praia da barreta
 -Islands 4 You;9/19:30;passeios de barco pela ria formosa
@@ -40,12 +47,12 @@
 -Parque Natural da Serra de Aire e Candeeiros;NE;duas das serras mais conhecidas e que mais vale a pena visitar em portugal
 -Santuário de Fátima;NE;o destino final das peregrinacoes portuguesas fomentada nas aparicoes de nossa senhora de fatima aos pastorinhos
 >
-<Guimaraes:
--Castelo de Guimaraes;10/18;castelo nasceu e viveu o primeiro rei de portugal
--Largo do Toural;NE;consiferado o coracao da cidade é uma das pracas mais importantes de Guimaraes
--Paco dos Duques de Braganca;10/18;monumento nacional onde viveram os duqes de braganca e onde se podem ver exxpostas varias reliquias da epoca dos Descobrimentos Portugueses
--Padrao do Salado;NE;padrao comemorativo da batalha do Salado localizado numa das zonas mais antigas da cidade
--Santuario da Penha;9/18;uma obra emblematica de guimaraes com uma singular beleza e valia religiosa
+<Aveiro:
+-Parque da Macaca;NE;tambem conhecido como Parque Infante Dom Pedro, tem bastante biodiversidade e espacos amplos para um bom piquenique
+-Praia da Barra;NE;praia onde a Ria se liga ao mar e onde se pode visitar o seu monumental Farol
+-Praia da Costa Nova;NE;uma das mais marcantes praias portuguesas com as cores das tipicas casas utilizadas pelos pescadores
+-Ria de Aveiro;NE;lagoa costeira de baixa profundidade por onde se pode partir num moliceiro para uma nova perspetiva da cidade
+-Se de Aveiro;9/19h;o culto mariano ligado às gentes de aveiro
 >
 <Lagos:
 -Castelo de Lagos;NE;tambem conhecido como castelo dos Governadores onde já foi estabelecida a sede do governo militar
@@ -74,6 +81,13 @@
 -Mercado Municipal de Nazare;8/13;mercado onde não há de faltar o peixe fresco trazido pelas famosas nazarenas
 -Praia da Nazare;NE;uma das praias mais famosas de portugal nao so pelas incriveis ondas como pela agua gelada
 -Santuario da Nossa Senhora da Nazare;9/19;santuario que remota ao seculo XIV e que apenas permanece intacto até hoje graças à ação dos pescadores
+>
+<Terceira:
+-Algar do Carvao;14/18;o maior vulcao do mundo que pode ser visitado no seu interior proporcionando vistas unicas e historias sobre a formacao da ilha
+-Monte Brasil;NE;monte situado em angra do heroismo com grande biodiversidade e animacao
+-Furnas do Enxofre;NE;campo onde ainda se da a saida de certos gases a elevadas temperaturas da terra devido a atividade vulcanica
+-Gruta do Natal;14:30/17:15;ganhou o nome devido a celebracao de uma missa alguns anos atras
+-Whale Watching;NE;marque o seu passeio de barco com a "Whale Watching" e tenha a oportunidade de avistar baleias, golfinhos, e até algumas tartarugas
 >
 <Obidos:
 -Aqueduto de Obidos;NE;tambem conhecido como aqueduto da Usseira, representa mais uma das marcas da presenca romana em Portugal
@@ -118,23 +132,9 @@
 -Se de Silves;9/17;construida com arenito vermelho constitui mais um marco do gotico em portugal
 >
 <Sintra:
--Cabo da Roca;NE;e considerado o ponto mais ocidental de portugal e da europa continental, sendo visitavel ate um dado limite para prevenir possiveis acidentes
 -Castelo dos Mouros;9:30/20;um castelo atualmente em ruinas que em tempos serviu para defender a cidade de sintra
 -Parque e Palacio Nacional da Pena;9:30/20;um dos pontos de maior interesse em portugal, revelando varias misturas de diferentes estilos arquitetonicos
 -Quinta da Regaleira;9:30/19;um dos mais surpreendentes pontos turisticos da cidade, sendo o seu jardim uma representação do microcosmo
 -Serra de Sintra;NE;a famosa serra a qual ninguem escapa com o seu misterio e com a sua beleza natural
->
-<Tavira:
--Castelo de Tavira;8/17;apesar de ja ter sofrido varias alteracoes ao longo do tempo por diferentes povos continua um marco da cidade a visitar
--Centro de Ciencia Viva de Tavira;10/18;espaco interativo que se explora temas ligados a energia e a agua
--Igreja de Santa Maria do Castelo;10/17;igreja matriz da cidade que ha de ter sido construida apos a conquista de tavira aos mouros
--Ilha de Tavira;NE;ilha deserta e arenosa que onde tambem podemos encontrar a praia do barril
--Mercado Municipal de Tavira;7/16;mercado municipal com fruta e alimentos de excelente qualidade
->
-<Terceira:
--Algar do Carvao;14/18;o maior vulcao do mundo que pode ser visitado no seu interior proporcionando vistas unicas e historias sobre a formacao da ilha
--Monte Brasil;NE;monte situado em angra do heroismo com grande biodiversidade e animacao
--Furnas do Enxofre;NE;campo onde ainda se da a saida de certos gases a elevadas temperaturas da terra devido a atividade vulcanica
--Gruta do Natal;14:30/17:15;ganhou o nome devido a celebracao de uma missa alguns anos atras
--Whale Watching;NE;marque o seu passeio de barco com a "Whale Watching" e tenha a oportunidade de avistar baleias, golfinhos, e até algumas tartarugas
+-Cabo da Roca;NE;e considerado o ponto mais ocidental de portugal e da europa continental, sendo visitavel ate um dado limite para prevenir possiveis acidentes
 >

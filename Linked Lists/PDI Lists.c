@@ -39,3 +39,38 @@ void imprime_lista_pdi (Lista_PDI pdi){
         aux=aux->next;
     }
 }
+void sort_pdi(Lista_PDI pdi){
+    Lista_PDI aux1,aux2,aux3,aux4,aux5;
+    Lista_PDI aux=pdi;
+    aux4= NULL;
+    while(aux4!=aux->next){
+        aux3=aux1=pdi;
+        aux2=aux1->next;
+        while(aux1!=aux4){
+            if(strcmp(aux1->nome,aux2->nome)>0){
+                if(aux1==pdi){
+                    aux5=aux2->next;
+                    aux2->next=aux1;
+                    aux1->next=aux5;
+                    pdi=aux2;
+                    aux3=aux2;
+                }
+                else{
+                    aux5=aux2->next;
+                    aux2->next=aux1;
+                    aux1->next=aux5;
+                    aux3->next=aux2;
+                    aux3=aux2;
+                }
+            }
+            else{
+                aux3=aux1;
+                aux1=aux1->next;
+            }
+            aux2=aux1->next;
+            if(aux2==aux4){
+                aux4=aux1;
+            }
+        }
+    }
+}

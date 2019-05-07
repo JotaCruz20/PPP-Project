@@ -5,7 +5,7 @@
 #include "../Linked Lists/Registo Lists.h"
 #include "../Linked Lists/PDI Lists.h"
 #include <string.h>
-#define txtl "locais.txt"
+#define txtl "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/locais.txt"
 #define txtr "registo.txt"
 
 Lista_Registo ler_fich_registo(Lista_Registo reg){
@@ -62,7 +62,7 @@ void muda_fich(char* user){
         fputs(registo->data,f);
         fputs(" ",f);
         fputs(registo->telemovel,f);
-        fputs("\n",f);
+        fputs(" \n",f);
         registo=registo->next;
     }while(registo!=NULL);
     fclose(f);
@@ -78,17 +78,20 @@ int logtester(char name[50]){//serve para ver se o nome dado existe no file
     }
     while(fgets(read,100,file)!=NULL){
         ptr=read;
-        for(i=0;*(ptr+i)!='\0';i++){
+        count=0;
+        memset(string,0,50);
+        for(i=0;*(ptr+i)!='\n';i++){
             if(*(ptr+i)!=' '){//adiciona letra a letra ao vetor
                 string[count]=*(ptr+i);
                 count++;
             }
-            else{
+            else if(*(ptr+i)==' '){
                 string[count]='\0';
+                count=0;//para começar string do 0
                 if(strcmp(string,name)==0){
                     return 1;
                 }
-                count=0;//para começar string do 0
+                memset(string,0,50);//limpa a string
             }
         }
     }

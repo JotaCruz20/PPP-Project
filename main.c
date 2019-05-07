@@ -42,14 +42,17 @@ int main() {
     else{
         registo(fra);
     }
-    printf("MENU");
-    printf("\nEscolha o que quer fazer:\n1-Alterar dados\n2-Listagem dos Locais e PDIs\n3-Preferencias\n4-Construir Viagem.");
-    scanf("%d",&n);
-    getchar();
-    if(n==1){
-        muda_fich(user);
-    }
-    if(n==2){
-        imprime_locais_e_pdis();
-    }
+    do {
+        printf("MENU");
+        printf("\nEscolha o que quer fazer:\n1-Alterar dados\n2-Listagem dos Locais e PDIs\n3-Preferencias\n4-Construir Viagem.\n5-Fechar\n");
+        scanf("%d", &n);
+        getchar();
+        if (n==1) {
+            muda_fich(user);
+        }
+        if (n==2) {
+            imprime_locais_e_pdis();
+            printf("Organizado por Nome,Descrição,Horario(NE significa que Nao Existe");
+        }
+    }while(n!=5);
 }
