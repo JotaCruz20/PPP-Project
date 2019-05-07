@@ -20,50 +20,39 @@ Lista_Registo ler_fich_registo(Lista_Registo reg){
     return reg;
 }
 
-void muda_fich(){
+void muda_fich(char* user){
     Lista_Registo registo,aux;
     FILE *f;
-    int n,leng;
-    char user[50],change[50];
+    int leng;
+    char change[50];
     registo=cria_lista_registo(" "," "," "," ");
     registo=ler_fich_registo(registo);
     f=fopen(txtr,"w");
-    printf("Pretende fazer mudanças as informações?\n1-Sim\n2-Nao\n");
-    scanf("%d",&n);
-    getchar();
-    if(n==1){
-        do{
-            printf("Indique o seu username: ");
-            fgets(user,50,stdin);
-            leng=strlen(user);
-            user[leng-1]='\0';
-            aux=pesquisa_lista_reg(registo,user);
-            if(aux==NULL){
-                printf("O seu username nao existe\n");
-            }
-        }while(aux==NULL);
-        printf("Indique o novo username: \n");
-        fgets(change,50,stdin);
-        leng=strlen(change);
-        change[leng-1]='\0';
-        strcpy(aux->nome,change);
-        printf("Indique a nova data: \n");
-        fgets(change,12,stdin);
-        leng=strlen(change);
-        change[leng-1]='\0';
-        strcpy(aux->data,change);
-        printf("Indique a nova cidade: \n");
-        fgets(change,20,stdin);
-        leng=strlen(change);
-        change[leng-1]='\0';
-        strcpy(aux->cidade,change);
-        printf("Indique o novo numero de telemovel: \n");
-        fgets(change,11,stdin);
-        leng=strlen(change);
-        change[leng-1]='\0';
-        strcpy(aux->telemovel,change);
-
+    aux=pesquisa_lista_reg(registo,user);
+    while (aux==NULL){
+        printf("Error User not found");
+        break;
     }
+    printf("Indique o novo username: \n");
+    fgets(change,50,stdin);
+    leng=strlen(change);
+    change[leng-1]='\0';
+    strcpy(aux->nome,change);
+    printf("Indique a nova data: \n");
+    fgets(change,12,stdin);
+    leng=strlen(change);
+    change[leng-1]='\0';
+    strcpy(aux->data,change);
+    printf("Indique a nova cidade: \n");
+    fgets(change,20,stdin);
+    leng=strlen(change);
+    change[leng-1]='\0';
+    strcpy(aux->cidade,change);
+    printf("Indique o novo numero de telemovel: \n");
+    fgets(change,11,stdin);
+    leng=strlen(change);
+    change[leng-1]='\0';
+    strcpy(aux->telemovel,change);
     registo=registo->next;//para nao escrever o espaço em branco
     do{
         fputs(registo->nome,f);
@@ -107,7 +96,7 @@ int logtester(char name[50]){//serve para ver se o nome dado existe no file
     return 0;
 }
 
-void registo(FILE *file1, FILE *file2){//funcao para o registo
+void registo(FILE *file1){//funcao para o registo
     int len,log;
     char name[50],cid[20],data[12],tele[10];
     if(file1==NULL){
@@ -142,13 +131,8 @@ void registo(FILE *file1, FILE *file2){//funcao para o registo
     fputs(tele, file1);
     fputs("\n", file1);
 }
-int login(FILE *file){//funcao para o login
-    int len,logf;
-    char user[50];
-    printf("\nIndique o seu username: ");
-    fgets(user,50,stdin);
-    len=strlen(user);
-    user[len-1]='\0';//tirar o \n da string para se poder comparar
+int login(char* user){//funcao para o login
+    int logf;
     logf=logtester(user);
     if(logf==1){
         return 1;

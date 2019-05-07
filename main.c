@@ -8,37 +8,46 @@
 #include "Linked Lists/PDI Lists.h"
 
 int main() {
-    int n,log;
-    FILE *fra,*frr;
+    int n,log,len;
+    FILE *fra;
+    char user[50];
     do {
         printf("Bem Vindo. Indique se quer: 1-Login / 2-Novo registo: ");
         scanf("%d", &n);
-        getchar();//Para nao dar conflito com o fgets
+        getchar();
     }while(n!=1 && n!=2);
     fra=fopen("registo.txt","a");
-    frr=fopen("registo.txt","r");
     if (n == 1){
-        log=login(frr);
+        printf("\nIndique o seu username: ");
+        fgets(user,50,stdin);
+        len=strlen(user);
+        user[len-1]='\0';
+        log=login(user);
+        while(log==0){
+            printf("\nO seu user nao existe, pretende: 1-Criar um / 2-Tentar outra vez: ");
+            scanf("%d", &n);
+            getchar();
+            if(n==1){
+                registo(fra);
+            }
+            else{
+                printf("\nIndique o seu username: ");
+                fgets(user,50,stdin);
+                len=strlen(user);
+                user[len-1]='\0';
+                log=login(user);
+            }
+        }
     }
     else{
-        registo(fra,frr);
+        registo(fra);
     }
-    while(log==0){
-        printf("\nO seu user nao existe, pretende: 1-Criar um / 2-Tentar outra vez: ");
-        scanf("%d", &n);
-        getchar();
-        if(n==1){
-            registo(fra,frr);
-        }
-        else{
-            log=login(frr);
-        }
-    }
-    getchar();
     printf("MENU");
     printf("\nEscolha o que quer fazer:\n1-Alterar dados\n2-Listagem dos Locais e PDIs\n3-Preferencias\n4-Construir Viagem.");
+    scanf("%d",&n);
+    getchar();
     if(n==1){
-        muda_fich();
+        muda_fich(user);
     }
     if(n==2){
         imprime_locais_e_pdis();
