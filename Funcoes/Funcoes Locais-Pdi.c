@@ -7,14 +7,13 @@
 #define txtl "locais.txt"
 #define txtr "registo.txt"
 
-void imprime_locais_e_pdis() {
+void carrega_locais_e_pdis(Lista_Locais loc) {
     FILE *f;
     Lista_Locais aux;
     char s;
     char str[1000],nome[100],horario[20],descricao[500],local[100];
     int flag=1;
     f=fopen(txtl,"r");
-    Lista_Locais loc=cria_lista_locais(" ");//cria uma lista de locais sem nada
     s=fgetc(f);
     do{
         if(s=='\n'){//nos paragrafos o fgetc vai ler o \n por isso adicionamos este caso para ser possivel ler o caracter desejado, ou seja, o <
@@ -38,11 +37,11 @@ void imprime_locais_e_pdis() {
             }
             else {
                 insere_lista_pdi(aux->pontos, nome, horario, descricao);
+                //sort_pdi(aux->pontos); falta dar sorte por ordem alfabetica aos pdis
             }
         }
         s=fgetc(f);
     }while(s !=EOF);
     sort_loc(loc);
-    imprime_lista_loc(loc);
-    fclose(f);
 }
+

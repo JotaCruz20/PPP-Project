@@ -88,3 +88,17 @@ void sort_loc(Lista_Locais loc){
         }
     }
 }
+int lista_vazia_loc(Lista_Locais loc){
+    return (loc->next == NULL ? 1 : 0);
+}
+Lista_Locais destroi_loc(Lista_Locais loc){
+    Lista_Locais temp_ptr;
+    //destroi_pdi(loc->pontos);
+    while (lista_vazia_loc (loc) == 0) {
+        temp_ptr = loc;
+        loc= loc->next;
+        free(temp_ptr);
+    }
+    free(loc);
+    return NULL;
+}

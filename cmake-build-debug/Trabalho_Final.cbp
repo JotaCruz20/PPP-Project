@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Favs.c">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Favs.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
 		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.c">
 			<Option target="Trabalho_Final"/>
 		</Unit>
@@ -90,10 +96,28 @@
 		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.h">
 			<Option target="Trabalho_Final"/>
 		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.c">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Fav Lists.c">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Fav Lists.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
 		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.c">
 			<Option target="Trabalho_Final"/>
 		</Unit>
 		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Favs Lists.c">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Favs Lists.h">
 			<Option target="Trabalho_Final"/>
 		</Unit>
 		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.c">

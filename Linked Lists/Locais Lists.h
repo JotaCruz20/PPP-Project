@@ -15,4 +15,6 @@ void insere_lista_loc (Lista_Locais lista, char* lnome);
 void procura_lista_loc (Lista_Locais loc,char* nome, Lista_Locais *ant, Lista_Locais *atual);
 Lista_Locais pesquisa_lista_loc(Lista_Locais list, char* name);
 void sort_loc(Lista_Locais loc);
+int lista_vazia_loc(Lista_Locais loc);
+Lista_Locais destroi_loc(Lista_Locais loc);
 #endif //TRABALHO_FINAL_LOCAIS_LISTS_H

@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/69/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/70/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/69/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/70/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/69/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/70/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/69/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/70/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -122,6 +122,33 @@ Trabalho_Final: cmake_check_build_system
 Trabalho_Final/fast:
 	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/build
 .PHONY : Trabalho_Final/fast
+
+Funcoes/Funcoes_Favs.o: Funcoes/Funcoes_Favs.c.o
+
+.PHONY : Funcoes/Funcoes_Favs.o
+
+# target to build an object file
+Funcoes/Funcoes_Favs.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.o
+.PHONY : Funcoes/Funcoes_Favs.c.o
+
+Funcoes/Funcoes_Favs.i: Funcoes/Funcoes_Favs.c.i
+
+.PHONY : Funcoes/Funcoes_Favs.i
+
+# target to preprocess a source file
+Funcoes/Funcoes_Favs.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.i
+.PHONY : Funcoes/Funcoes_Favs.c.i
+
+Funcoes/Funcoes_Favs.s: Funcoes/Funcoes_Favs.c.s
+
+.PHONY : Funcoes/Funcoes_Favs.s
+
+# target to generate assembly for a file
+Funcoes/Funcoes_Favs.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.s
+.PHONY : Funcoes/Funcoes_Favs.c.s
 
 Funcoes/Funcoes_Locais-Pdi.o: Funcoes/Funcoes_Locais-Pdi.c.o
 
@@ -177,6 +204,60 @@ Funcoes/Funcoes_Registo.c.s:
 	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.s
 .PHONY : Funcoes/Funcoes_Registo.c.s
 
+Linked_Lists/Favs_Lists.o: Linked_Lists/Favs_Lists.c.o
+
+.PHONY : Linked_Lists/Favs_Lists.o
+
+# target to build an object file
+Linked_Lists/Favs_Lists.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Favs_Lists.c.o
+.PHONY : Linked_Lists/Favs_Lists.c.o
+
+Linked_Lists/Favs_Lists.i: Linked_Lists/Favs_Lists.c.i
+
+.PHONY : Linked_Lists/Favs_Lists.i
+
+# target to preprocess a source file
+Linked_Lists/Favs_Lists.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Favs_Lists.c.i
+.PHONY : Linked_Lists/Favs_Lists.c.i
+
+Linked_Lists/Favs_Lists.s: Linked_Lists/Favs_Lists.c.s
+
+.PHONY : Linked_Lists/Favs_Lists.s
+
+# target to generate assembly for a file
+Linked_Lists/Favs_Lists.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Favs_Lists.c.s
+.PHONY : Linked_Lists/Favs_Lists.c.s
+
+Linked_Lists/Locais_Fav_Lists.o: Linked_Lists/Locais_Fav_Lists.c.o
+
+.PHONY : Linked_Lists/Locais_Fav_Lists.o
+
+# target to build an object file
+Linked_Lists/Locais_Fav_Lists.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Fav_Lists.c.o
+.PHONY : Linked_Lists/Locais_Fav_Lists.c.o
+
+Linked_Lists/Locais_Fav_Lists.i: Linked_Lists/Locais_Fav_Lists.c.i
+
+.PHONY : Linked_Lists/Locais_Fav_Lists.i
+
+# target to preprocess a source file
+Linked_Lists/Locais_Fav_Lists.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Fav_Lists.c.i
+.PHONY : Linked_Lists/Locais_Fav_Lists.c.i
+
+Linked_Lists/Locais_Fav_Lists.s: Linked_Lists/Locais_Fav_Lists.c.s
+
+.PHONY : Linked_Lists/Locais_Fav_Lists.s
+
+# target to generate assembly for a file
+Linked_Lists/Locais_Fav_Lists.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Fav_Lists.c.s
+.PHONY : Linked_Lists/Locais_Fav_Lists.c.s
+
 Linked_Lists/Locais_Lists.o: Linked_Lists/Locais_Lists.c.o
 
 .PHONY : Linked_Lists/Locais_Lists.o
@@ -203,6 +284,33 @@ Linked_Lists/Locais_Lists.s: Linked_Lists/Locais_Lists.c.s
 Linked_Lists/Locais_Lists.c.s:
 	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/Locais_Lists.c.s
 .PHONY : Linked_Lists/Locais_Lists.c.s
+
+Linked_Lists/PDI_Favs_Lists.o: Linked_Lists/PDI_Favs_Lists.c.o
+
+.PHONY : Linked_Lists/PDI_Favs_Lists.o
+
+# target to build an object file
+Linked_Lists/PDI_Favs_Lists.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Favs_Lists.c.o
+.PHONY : Linked_Lists/PDI_Favs_Lists.c.o
+
+Linked_Lists/PDI_Favs_Lists.i: Linked_Lists/PDI_Favs_Lists.c.i
+
+.PHONY : Linked_Lists/PDI_Favs_Lists.i
+
+# target to preprocess a source file
+Linked_Lists/PDI_Favs_Lists.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Favs_Lists.c.i
+.PHONY : Linked_Lists/PDI_Favs_Lists.c.i
+
+Linked_Lists/PDI_Favs_Lists.s: Linked_Lists/PDI_Favs_Lists.c.s
+
+.PHONY : Linked_Lists/PDI_Favs_Lists.s
+
+# target to generate assembly for a file
+Linked_Lists/PDI_Favs_Lists.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Linked_Lists/PDI_Favs_Lists.c.s
+.PHONY : Linked_Lists/PDI_Favs_Lists.c.s
 
 Linked_Lists/PDI_Lists.o: Linked_Lists/PDI_Lists.c.o
 
@@ -294,15 +402,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Trabalho_Final"
 	@echo "... edit_cache"
+	@echo "... Funcoes/Funcoes_Favs.o"
+	@echo "... Funcoes/Funcoes_Favs.i"
+	@echo "... Funcoes/Funcoes_Favs.s"
 	@echo "... Funcoes/Funcoes_Locais-Pdi.o"
 	@echo "... Funcoes/Funcoes_Locais-Pdi.i"
 	@echo "... Funcoes/Funcoes_Locais-Pdi.s"
 	@echo "... Funcoes/Funcoes_Registo.o"
 	@echo "... Funcoes/Funcoes_Registo.i"
 	@echo "... Funcoes/Funcoes_Registo.s"
+	@echo "... Linked_Lists/Favs_Lists.o"
+	@echo "... Linked_Lists/Favs_Lists.i"
+	@echo "... Linked_Lists/Favs_Lists.s"
+	@echo "... Linked_Lists/Locais_Fav_Lists.o"
+	@echo "... Linked_Lists/Locais_Fav_Lists.i"
+	@echo "... Linked_Lists/Locais_Fav_Lists.s"
 	@echo "... Linked_Lists/Locais_Lists.o"
 	@echo "... Linked_Lists/Locais_Lists.i"
 	@echo "... Linked_Lists/Locais_Lists.s"
+	@echo "... Linked_Lists/PDI_Favs_Lists.o"
+	@echo "... Linked_Lists/PDI_Favs_Lists.i"
+	@echo "... Linked_Lists/PDI_Favs_Lists.s"
 	@echo "... Linked_Lists/PDI_Lists.o"
 	@echo "... Linked_Lists/PDI_Lists.i"
 	@echo "... Linked_Lists/PDI_Lists.s"

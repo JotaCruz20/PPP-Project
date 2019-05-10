@@ -39,6 +39,37 @@ void imprime_lista_pdi (Lista_PDI pdi){
         aux=aux->next;
     }
 }
+
+void procura_lista_pdi (Lista_PDI pdi,char* lnome, Lista_PDI *ant, Lista_PDI *atual){
+    *ant=pdi;//ponteiro inicial
+    *atual=pdi->next;//ponteiro a apontar para o seguinte
+    while((*atual)!=NULL && strcmp((*ant)->nome,lnome)!=0){//enqtn atual nao for o ultimo e as strings nao forem iguais o ant toma o valor do autal e o atual do seguinte
+        *ant=*atual;
+        *atual=(*atual)->next;
+    }
+}
+
+Lista_PDI pesquisa_lista_pdi(Lista_PDI list, char* name){//vai usar a procura lista para retornar o endereço da posiçao do local com o nome dado
+    Lista_PDI ant;
+    Lista_PDI atual;
+    procura_lista_pdi(list,name,&ant,&atual);
+    return atual;
+}
+
+int lista_vazia_pdi(Lista_PDI pdi){
+    return (pdi->next == NULL ? 1 : 0);
+}
+Lista_PDI destroi_pdi (Lista_PDI pdi){
+    Lista_PDI temp_ptr;
+    while (lista_vazia_pdi (pdi) == 0) {
+        temp_ptr = pdi;
+        pdi= pdi->next;
+        free(temp_ptr);
+    }
+    free(pdi);
+    return NULL;
+}
+
 void sort_pdi(Lista_PDI pdi){
     Lista_PDI aux1,aux2,aux3,aux4,aux5;
     Lista_PDI aux=pdi;
@@ -47,7 +78,7 @@ void sort_pdi(Lista_PDI pdi){
         aux3=aux1=pdi;
         aux2=aux1->next;
         while(aux1!=aux4){
-            if(strcmp(aux1->nome,aux2->nome)>0){
+            if(strcmp(aux1->nome,aux2->nome)<0){
                 if(aux1==pdi){
                     aux5=aux2->next;
                     aux2->next=aux1;

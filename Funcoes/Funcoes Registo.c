@@ -5,7 +5,7 @@
 #include "../Linked Lists/Registo Lists.h"
 #include "../Linked Lists/PDI Lists.h"
 #include <string.h>
-#define txtl "/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/cmake-build-debug/locais.txt"
+#define txtl "locais.txt"
 #define txtr "registo.txt"
 
 Lista_Registo ler_fich_registo(Lista_Registo reg){
@@ -16,7 +16,6 @@ Lista_Registo ler_fich_registo(Lista_Registo reg){
         sscanf(string,"%[^ ] %[^ ] %[^ ] %[^\n]\n",nome,cidade,data,telemovel);
         insere_lista_reg(reg,nome,cidade,data,telemovel);
     }
-    fclose(f);
     return reg;
 }
 
@@ -29,10 +28,6 @@ void muda_fich(char* user){
     registo=ler_fich_registo(registo);
     f=fopen(txtr,"w");
     aux=pesquisa_lista_reg(registo,user);
-    while (aux==NULL){
-        printf("Error User not found");
-        break;
-    }
     printf("Indique o novo username: \n");
     fgets(change,50,stdin);
     leng=strlen(change);
@@ -65,7 +60,6 @@ void muda_fich(char* user){
         fputs(" \n",f);
         registo=registo->next;
     }while(registo!=NULL);
-    fclose(f);
 }
 int logtester(char name[50]){//serve para ver se o nome dado existe no file
     FILE *file;
@@ -94,9 +88,7 @@ int logtester(char name[50]){//serve para ver se o nome dado existe no file
                 memset(string,0,50);//limpa a string
             }
         }
-    }
-    fclose(file);
-    return 0;
+    }return 0;
 }
 
 void registo(FILE *file1){//funcao para o registo
