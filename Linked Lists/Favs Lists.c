@@ -3,21 +3,28 @@
 #include <string.h>
 #include <stdlib.h>
 
+Lista_Hot cria_lista_hot(char* ponto){
+    Lista_Hot aux;
+    aux=(Lista_Hot)malloc(sizeof(struct hnode));
+    if (aux!=NULL){
+        strcpy(aux->hot,ponto);
+    }
+    return aux;
+}
+
 
 Lista_Favs cria_lista_favs(char* user){
     Lista_Favs aux;
     aux=(Lista_Favs)malloc(sizeof(struct fnode));
     if (aux!=NULL){
-        strcpy(aux->user,user);
-        memset(aux->hot,0,50);
-        aux->next=NULL;
+        strcpy(aux->user,user);aux->next=NULL;
     }
     return aux;
 }
 Lista_Favs insere_hot_favs(Lista_Favs list,char* hot,char* user){
     Lista_Favs aux;
     aux=pesquisa_lista_favs(list,user);//serve para adicionar o ponto hot no user certo
-    strcpy(aux->hot,hot);
+    aux->hot=cria_lista_hot(hot);
 }
 
 void insere_lista_favs (Lista_Favs lista, char* user){
@@ -29,7 +36,6 @@ void insere_lista_favs (Lista_Favs lista, char* user){
     aux=aux->next;
     if (aux!=NULL){
         strcpy(aux->user,user);
-        memset(aux->hot,0,50);//para inicializar a memoria do hot limpa
         aux->next=NULL;
     }
 }
@@ -48,21 +54,4 @@ Lista_Favs pesquisa_lista_favs(Lista_Favs list, char* name){//vai usar a procura
     Lista_Favs atual;
     procura_lista_favs(list,name,&ant,&atual);
     return atual;
-}
-
-void imprime_nomes (Lista_Favs fav){
-    Lista_Favs aux;
-    aux=fav;
-    while(aux!=NULL){
-        printf("%s\n", aux->user);
-        aux=aux->next;
-    }
-}
-void imprime_hot(Lista_Favs fav){
-    Lista_Favs aux;
-    aux=fav;
-    while(aux!=NULL){
-        printf("%s %s\n",aux->user,aux->hot);
-        aux=aux->next;
-    }
 }

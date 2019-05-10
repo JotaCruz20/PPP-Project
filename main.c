@@ -54,8 +54,10 @@ int main() {
     else{
         registo(fra);
     }
-    load_names(fav);
     carrega_lista_hot(fav);
+    if(fav->next==NULL){//caso seja a 1º vez q se esteja a usar o programa o ficheiro vai estar em branco e vai dar erro.
+        load_names(fav);
+    }
     do {
         printf("\nMENU");
         printf("\nEscolha o que quer fazer:\n1-Alterar dados\n2-Listagem dos Locais e PDIs\n3-Preferencias\n4-Construir Viagem\n5-Fechar\n");

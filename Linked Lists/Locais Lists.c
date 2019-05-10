@@ -30,7 +30,7 @@ void insere_lista_loc (Lista_Locais lista, char* lnome) {
 void procura_lista_loc (Lista_Locais loc,char* lnome, Lista_Locais *ant, Lista_Locais *atual){
     *ant=loc;//ponteiro inicial
     *atual=loc->next;//ponteiro a apontar para o seguinte
-    while((*atual)!=NULL && strcmp((*atual)->nome_local,lnome)!=0){//enqtn atual nao for o ultimo e as strings nao forem iguais o ant toma o valor do autal e o atual do seguinte
+    while((*atual)!=NULL && strcmp((*atual)->nome_local,lnome)!=0 && strcmp((*ant)->nome_local,lnome)!=0){//enqtn atual nao for o ultimo e as strings nao forem iguais o ant toma o valor do autal e o atual do seguinte
         *ant=*atual;
         *atual=(*atual)->next;
     }

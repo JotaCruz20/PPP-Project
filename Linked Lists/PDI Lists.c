@@ -43,7 +43,7 @@ void imprime_lista_pdi (Lista_PDI pdi){
 void procura_lista_pdi (Lista_PDI pdi,char* lnome, Lista_PDI *ant, Lista_PDI *atual){
     *ant=pdi;//ponteiro inicial
     *atual=pdi->next;//ponteiro a apontar para o seguinte
-    while((*atual)!=NULL && strcmp((*ant)->nome,lnome)!=0){//enqtn atual nao for o ultimo e as strings nao forem iguais o ant toma o valor do autal e o atual do seguinte
+    while((*atual)!=NULL && strcmp((*atual)->nome,lnome)!=0 && strcmp((*ant)->nome,lnome)!=0  ){//enqtn atual nao for o ultimo e as strings nao forem iguais o ant toma o valor do autal e o atual do seguinte
         *ant=*atual;
         *atual=(*atual)->next;
     }

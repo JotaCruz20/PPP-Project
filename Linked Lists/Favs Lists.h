@@ -3,10 +3,17 @@
 #include "PDI Favs Lists.h"
 #include "Locais Fav Lists.h"
 
+typedef struct hnode* Lista_Hot;//linked list para guardar os locais e PDIS
+typedef struct hnode{
+    char hot[100];
+}List_Hot_node;
+
+
+
 typedef struct fnode* Lista_Favs;//linked list para guardar os locais e PDIS
 typedef struct fnode{
     char user[50];
-    char hot[100];
+    Lista_Hot hot;
     Lista_Locais_Favs lfav;
     Lista_PDI_Favs pfav;
     Lista_Favs next;
@@ -19,6 +26,7 @@ void procura_lista_favs (Lista_Favs loc,char* lnome, Lista_Favs *ant, Lista_Favs
 Lista_Favs pesquisa_lista_favs(Lista_Favs list, char* name);
 void imprime_nomes(Lista_Favs favs);
 void imprime_hot(Lista_Favs fav);
+Lista_Hot cria_lista_hot(char* ponto);
 
 
 #endif //TRABALHO_FINAL_FAVS_LISTS_H
