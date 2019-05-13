@@ -63,18 +63,18 @@ void sort_loc(Lista_Locais loc){
         while(aux1!=aux4){
             if(strcmp(aux1->nome_local,aux2->nome_local)>0){//compara as strings do node atual e do seguinte
                 if(aux1==loc){//ou seja se aux1 estiver no header da linked list
-                aux5=aux2->next;//fica com a informaçao de next do aux2
-                aux2->next=aux1;//troca aux2 para aux1
-                aux1->next=aux5;//troca aux1 para aux2
-                loc=aux2;//
-                aux3=aux2;
+                    aux5=aux2->next;//fica com a informaçao de next do aux2
+                    aux2->next=aux1;//troca aux2 para aux1
+                    aux1->next=aux5;//troca aux1 para aux2
+                    loc=aux2;//
+                    aux3=aux2;
                 }
                 else{
-                aux5=aux2->next;
-                aux2->next=aux1;
-                aux1->next=aux5;
-                aux3->next=aux2;
-                aux3=aux2;
+                    aux5=aux2->next;
+                    aux2->next=aux1;
+                    aux1->next=aux5;
+                    aux3->next=aux2;
+                    aux3=aux2;
                 }
             }
             else{//se aux1 nao for maior avança para o node seguinte
@@ -88,17 +88,10 @@ void sort_loc(Lista_Locais loc){
         }
     }
 }
-int lista_vazia_loc(Lista_Locais loc){
-    return (loc->next == NULL ? 1 : 0);
-}
-Lista_Locais destroi_loc(Lista_Locais loc){
-    Lista_Locais temp_ptr;
-    //destroi_pdi(loc->pontos);
-    while (lista_vazia_loc (loc) == 0) {
-        temp_ptr = loc;
-        loc= loc->next;
-        free(temp_ptr);
-    }
-    free(loc);
-    return NULL;
-}
+
+void sort_loc_pref(Lista_Locais loc,Lista_Favs favs){
+    int count,max;
+    Lista_Locais pesq;
+
+}//acabar isto asap
+

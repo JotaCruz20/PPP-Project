@@ -4,6 +4,7 @@
 
 
 void carrega_locais_e_pdis(Lista_Locais loc);
+void print_locs(Lista_Locais loc,Lista_Favs favs);
 
 
 #endif //TRABALHO_FINAL_FUNCOES_LOCAIS_PDI_H

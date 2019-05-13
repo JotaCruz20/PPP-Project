@@ -1,7 +1,9 @@
 <Joao
--Capela dos Ossos
-/Muralhas
-/Ilha Deserta
+-Cabra
+/Parque da Macaca
+/Cabra
+/Se de Aveiro
+/Ria de Aveiro
 *Faro
 *Coimbra
 *Aveiro

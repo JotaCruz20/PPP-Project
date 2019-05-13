@@ -9,7 +9,11 @@ typedef struct pfnode{
 
 Lista_PDI_Favs cria_lista_pdifavs(char* pnome);
 void insere_lista_pdifavs (Lista_PDI_Favs lista, char* lnome);
-void print_pdi(Lista_PDI_Favs lista);
+void print_pdifav(Lista_PDI_Favs lista);
+void procura_lista_pdifav (Lista_PDI_Favs pdi,char* lnome, Lista_PDI_Favs *ant, Lista_PDI_Favs *atual);
+Lista_PDI_Favs pesquisa_lista_pdifav(Lista_PDI_Favs list, char* name);
+void destroi_pdifav(Lista_PDI_Favs **fav,int pos);
+
 
 
 #endif //TRABALHO_FINAL_PDI_FAVS_LISTS_H

@@ -40,8 +40,30 @@ void carrega_locais_e_pdis(Lista_Locais loc) {
                 //sort_pdi(aux->pontos); falta dar sorte por ordem alfabetica aos pdis
             }
         }
+        //sort_pdi(aux->pontos);
         s=fgetc(f);
     }while(s !=EOF);
     sort_loc(loc);
+}
+
+void print_locs(Lista_Locais loc,Lista_Favs fav){
+    int n;
+    do {
+        printf("1-Organizado por ordem alfabetica\n2-Organizado por popularidade\n3-Voltar atras\n");
+        scanf("%d",&n);
+        if (n == 1) {
+            imprime_lista_loc(loc);
+            printf("Organizado por Nome,Descrição,Horario(NE significa que Nao Existe)\n");
+        }
+        else if(n==2){
+            sort_loc_pref(loc,fav);
+        }
+        else if(n==3){
+            break;
+        }
+        else{
+            printf("Escolha uma das opções.\n");
+        }
+    }while(n==1 || n==2);
 }
 

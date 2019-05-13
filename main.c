@@ -63,17 +63,13 @@ int main() {
         printf("\nEscolha o que quer fazer:\n1-Alterar dados\n2-Listagem dos Locais e PDIs\n3-Preferencias\n4-Construir Viagem\n5-Fechar\n");
         scanf("%d", &n);
         getchar();
-        if(loc->next!=NULL){
-            loc=destroi_loc(loc);
-        }
         loc=cria_lista_locais(" ");//cria uma lista de locais sem nada
         carrega_locais_e_pdis(loc);
         if (n==1) {
             muda_fich(user);
         }
         if (n==2) {
-            imprime_lista_loc(loc);
-            printf("Organizado por Nome,Descrição,Horario(NE significa que Nao Existe)\n");
+            print_locs(loc,fav);
         }
         if(n==3){
             rem_add(fav,loc,user);

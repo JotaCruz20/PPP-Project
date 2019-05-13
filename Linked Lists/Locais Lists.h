@@ -1,6 +1,7 @@
 #ifndef TRABALHO_FINAL_LOCAIS_LISTS_H
 #define TRABALHO_FINAL_LOCAIS_LISTS_H
 #include "PDI Lists.h"
+#include "../Linked Lists/Favs Lists.h"
 
 typedef struct lnode* Lista_Locais;//linked list para guardar os locais e PDIS
 typedef struct lnode{
@@ -15,6 +16,6 @@ void insere_lista_loc (Lista_Locais lista, char* lnome);
 void procura_lista_loc (Lista_Locais loc,char* nome, Lista_Locais *ant, Lista_Locais *atual);
 Lista_Locais pesquisa_lista_loc(Lista_Locais list, char* name);
 void sort_loc(Lista_Locais loc);
-int lista_vazia_loc(Lista_Locais loc);
-Lista_Locais destroi_loc(Lista_Locais loc);
+void sort_loc_pref(Lista_Locais loc,Lista_Favs fav);
+
 #endif //TRABALHO_FINAL_LOCAIS_LISTS_H
