@@ -3,6 +3,7 @@
 
 CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.o: ../Funcoes/Funcoes\ Favs.c
 CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.o: ../Funcoes/Funcoes\ Favs.h
+CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.o: ../Funcoes/Funcoes\ Locais-Pdi.h
 CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.o: ../Linked\ Lists/Favs\ Lists.h
 CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.o: ../Linked\ Lists/Locais\ Fav\ Lists.h
 CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Favs.c.o: ../Linked\ Lists/Locais\ Lists.h

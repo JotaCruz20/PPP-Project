@@ -15,6 +15,8 @@ Funcoes Favs.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Fav Lists.h
 ../Linked Lists/PDI Favs Lists.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Favs Lists.h
+../Funcoes/Funcoes Locais-Pdi.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.h
 stdio.h
 -
 string.h
@@ -28,59 +30,9 @@ stdlib.h
 ../Linked Lists/Locais Lists.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
 
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.c
-Funcoes Locais-Pdi.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.h
-stdio.h
--
-../Linked Lists/Locais Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
-../Linked Lists/Registo Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.h
-../Linked Lists/PDI Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
-string.h
--
-
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.h
 ../Linked Lists/Locais Lists.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
-
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.c
-Funcoes Registo.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.h
-stdio.h
--
-errno.h
--
-../Linked Lists/Locais Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
-../Linked Lists/Registo Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.h
-../Linked Lists/PDI Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
-string.h
--
-
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.h
-../Linked Lists/Registo Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.h
-../Linked Lists/PDI Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
-../Linked Lists/Locais Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
-stdio.h
--
-
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.c
-Favs Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.h
-stdio.h
--
-string.h
--
-stdlib.h
--
 
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.h
 PDI Favs Lists.h
@@ -90,57 +42,13 @@ Locais Fav Lists.h
 
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Fav Lists.h
 
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.c
-Locais Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
-PDI Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
-stdlib.h
--
-stdio.h
--
-string.h
--
-
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
 PDI Lists.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
 ../Linked Lists/Favs Lists.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.h
 
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Favs Lists.c
-PDI Favs Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Favs Lists.h
-stdio.h
--
-string.h
--
-stdlib.h
--
-
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Favs Lists.h
 
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
-
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.h
-
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/main.c
-stdio.h
--
-string.h
--
-errno.h
--
-Funcoes/Funcoes Locais-Pdi.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.h
-Funcoes/Funcoes Registo.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.h
-Funcoes/Funcoes Favs.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Favs.h
-Linked Lists/Locais Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
-Linked Lists/Registo Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Registo Lists.h
-Linked Lists/PDI Lists.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Lists.h
 

@@ -1,12 +1,6 @@
 <Joao
--Cabra
-/Parque da Macaca
 /Cabra
-/Se de Aveiro
-/Ria de Aveiro
-*Faro
-*Coimbra
-*Aveiro
+/Parque da Macaca
 >
 <Bia
 >

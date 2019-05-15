@@ -2,6 +2,7 @@
 #include "../Linked Lists/Favs Lists.h"
 #include "../Linked Lists/Locais Fav Lists.h"
 #include "../Linked Lists/PDI Favs Lists.h"
+#include "../Funcoes/Funcoes Locais-Pdi.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -69,7 +70,7 @@ void write_fav(Lista_Favs favs){
         fputs("<",f);
         fputs(favs->user,f);
         fputs("\n",f);
-        if(favs->hot!=NULL && favs->hot->hot[0]!='\0') {//pois qnd se elimina o ponto hot poe tudo a 0s
+        if(favs->hot!=NULL ) {//pois qnd se elimina o ponto hot poe tudo a 0s
             fputs("-",f);
             fputs(favs->hot->hot, f);
             fputs("\n", f);
@@ -120,14 +121,12 @@ void load_names(Lista_Favs fav){
     }
 }
 
-void addhot(Lista_Favs fav,Lista_Locais loc,char* user) {
+void addhot(Lista_Favs fav,Lista_Locais loc,char* user,Lista_Favs pesq) {
     char ponto[50];
     int flag=1;
     int len;
     Lista_PDI aux,aux1;
-    Lista_Favs pesquisa;
-    pesquisa=pesquisa_lista_favs(fav,user);
-    if(pesquisa->hot!=NULL && pesquisa->hot->hot[0]!='\0'){//verifica se ja nao ha nenhum ponto hot
+    if(pesq->hot!=NULL && pesq->hot->hot[0]!='\0'){//verifica se ja nao ha nenhum ponto hot
         printf("Não pode adicionar mais nenhum ponto hot, visto que já tem 1.\n");
         flag=0;
     }
@@ -150,19 +149,22 @@ void addhot(Lista_Favs fav,Lista_Locais loc,char* user) {
     if(flag==1){
         printf("Houve um erro ao adicionar o PDI Hot, verifique que adicionou um PDI que existe listado.\n");
     }
+}//ver aqui a linked list Hot
+
+void remhot(Lista_Favs fav,Lista_Favs pesq){
+    fav=pesq;
+    if(fav->hot!=NULL) {
+        fav->hot = NULL;
+    }
+    else{
+        printf("Não tem nenhum ponto hot.\n");
+    }
 }
 
-void remhot(Lista_Favs fav,char* user){
-    Lista_Favs aux;
-    aux=pesquisa_lista_favs(fav,user);
-    aux->hot=NULL;
-}
-
-void addpfav(Lista_Favs fav,Lista_Locais loc,char*user){
+void addpfav(Lista_Locais loc,Lista_Favs pesq){
     char ponto[50];
     int flag=1;
     int len;
-    Lista_Favs pesq;
     Lista_PDI aux,aux1;
     printf("Que ponto quer adicionar?");
     fgets(ponto, 50, stdin);
@@ -172,7 +174,6 @@ void addpfav(Lista_Favs fav,Lista_Locais loc,char*user){
         loc = loc->next;//Isto pois o 1º node da lista esta a branco
         aux1 = loc->pontos;//aux1 fica com a linked list dos pdis
         aux = pesquisa_lista_pdi(aux1, ponto);//vai procurar na linked list dos pdis pelo nome do pdi hot q o user deu
-        pesq=pesquisa_lista_favs(fav,user);
         if (aux != NULL) {
             if(pesq->pfav==NULL){
                 pesq->pfav=cria_lista_pdifavs(ponto);
@@ -182,50 +183,84 @@ void addpfav(Lista_Favs fav,Lista_Locais loc,char*user){
             }
             printf("Ponto Adicionado com sucesso.\n");
             flag=0;
+            loc->pontos=pesquisa_lista_pdi(loc->pontos,ponto);
+            loc->pontos->pop++;
         }
+
     }
     if(flag==1){
         printf("Houve um erro ao adicionar o PDI Hot, verifique que adicionou um PDI que existe listado.\n");
     }
 }
 
-void rempfav(Lista_Favs fav,Lista_Locais loc,char*user){
+void rempfav(Lista_Favs fav,Lista_Favs pesq,Lista_Locais loc){
     char ponto[50];
-    int len,count=0;
-    Lista_Favs pesq;
-    Lista_PDI_Favs aux1,ant;
-    pesq=pesquisa_lista_favs(fav,user);
-    if(pesq->pfav!=NULL) {
+    int len;
+    Lista_PDI_Favs aux1;
+    if(pesq->pfav!=NULL) {//se nao tiver da NULL se ja tiver segue pelo if
         print_pdifav(pesq->pfav);
         printf("Que ponto quer remover?\n");
         fgets(ponto, 50, stdin);
         len = strlen(ponto);
         ponto[len - 1] = '\0';
-        aux1 = pesquisa_lista_pdifav(pesq->pfav, ponto);
-        ant=pesq->pfav;
+        aux1 = pesquisa_lista_pdifav(pesq->pfav, ponto);//vamos usar para ver se o user escreveu um local que tem nos favs
+        fav=pesq;
         if (aux1 != NULL) {
-            while(ant->next!=aux1 && ant!=aux1){
-                ant=ant->next;
-                count++;
-            destroi_pdifav(pesq->pfav,count);
+            if(aux1==fav->pfav){
+                fav->pfav=fav->pfav->next;
+                printf("Ponto Retirado com sucesso.\n");
             }
-            printf("Ponto Retirado com sucesso.\n");
+            else {
+                elimina_pdifav(fav->pfav, ponto);
+                printf("Ponto Retirado com sucesso.\n");
+            }
+            loc->pontos=pesquisa_lista_pdi(loc->pontos,ponto);
+            loc->pontos->pop--;
         } else {
             printf("Esse ponto nao esta na sua lista de favoritos.\n");
         }
     } else{
         printf("Não tem ainda pdis favoritos.\n");
     }
-}//Pedir ajuda nisto
+}
 
-void addlfav(Lista_Favs fav,Lista_Locais loc,char* user){
+void remlfav(Lista_Favs fav,Lista_Favs pesq,Lista_Locais loc){
+    char ponto[50];
+    int len;
+    Lista_Locais_Favs aux1;
+    if(pesq->lfav!=NULL) {//se nao tiver da NULL se ja tiver segue pelo if
+        print_locfav(pesq->lfav);
+        printf("Que ponto quer remover?\n");
+        fgets(ponto, 50, stdin);
+        len = strlen(ponto);
+        ponto[len - 1] = '\0';
+        aux1 = pesquisa_lista_locfav(pesq->lfav, ponto);//vamos usar para ver se o user escreveu um local que tem nos favs
+        fav=pesq;
+        if (aux1 != NULL) {
+            if(aux1==fav->lfav){
+                fav->lfav=fav->lfav->next;
+                printf("Ponto Retirado com sucesso.\n");
+            }
+            else {
+                elimina_locfav(fav->lfav, ponto);
+                printf("Ponto Retirado com sucesso.\n");
+            }
+            loc=pesquisa_lista_loc(loc,ponto);
+            loc->pop--;
+        } else {
+            printf("Esse ponto nao esta na sua lista de favoritos.\n");
+        }
+    } else{
+        printf("Não tem ainda pdis favoritos.\n");
+    }
+}
+
+void addlfav(Lista_Locais loc,Lista_Favs pesq){
     char ponto[50];
     int flag=1;
     int len,count=0;
-    Lista_Favs pesq;
     Lista_Locais aux;
     Lista_Locais_Favs aux1;
-    pesq=pesquisa_lista_favs(fav,user);//vai inserir no user certo o local favorito
     aux1=pesq->lfav;
     while(aux1!=NULL) {
         count++;
@@ -250,6 +285,8 @@ void addlfav(Lista_Favs fav,Lista_Locais loc,char* user){
                 else {
                     insere_lista_lfavs(pesq->lfav,ponto);//insere
                 }
+                loc=pesquisa_lista_loc(loc,ponto);
+                loc->pop++;
                 printf("Local Adicionado com sucesso.\n");
                 flag=0;
             }
@@ -260,30 +297,44 @@ void addlfav(Lista_Favs fav,Lista_Locais loc,char* user){
     }
 }
 
-
 void rem_add(Lista_Favs  fav,Lista_Locais loc,char* user){
     int n;
-    printf("Escolha uma das opções: \n1-Adicionar PDI Hot\n2-Adicionar PDI Favorito\n3-Adicionar Local Favorito\n4-Remover PDI Hot\n5-Remover PDI Favorito\n6-Remover Local Favorito\n7-Voltar atras\n");
+    Lista_Favs pesq;
+    printf("Escolha uma das opções: \n1-Adicionar PDI Hot\n2-Adicionar PDI Favorito\n3-Adicionar Local Favorito\n4-Remover PDI Hot\n5-Remover PDI Favorito\n6-Remover Local Favorito\n7-Listagem dos seus pontos favoritos\n8-Voltar atras\n");
     scanf("%d",&n);
     getchar();
+    pesq=pesquisa_lista_favs(fav,user);
     do{
         if(n==1){
-            addhot(fav,loc,user);
+            addhot(fav,loc,user,pesq);
         }
         else if(n==2){
-            addpfav(fav,loc,user);
+            addpfav(loc,pesq);
         }
         else if(n==3){
-            addlfav(fav,loc,user);
+            addlfav(loc,pesq);
         }
         else if(n==4){
-            remhot(fav,user);
+            remhot(fav,pesq);
         }
         else if(n==5){
-            rempfav(fav,loc,user);
+            rempfav(fav,pesq,loc);
+        }
+        else if(n==6){
+            remlfav(fav,pesq,loc);
         }
         else if(n==7){
+            imprime_hot(pesq->hot);
+            print_locfav(pesq->lfav);
+            print_pdifav(pesq->pfav);
+
+        }
+        else if(n==8){
             break;
         }
-    }while(n<1 || n>7);
+        else{
+            printf("Escolha uma das opções.\n");
+        }
+    }while(n<1 || n>8);
 }
+

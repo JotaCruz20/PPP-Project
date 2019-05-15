@@ -12,7 +12,7 @@ void insere_lista_pdifavs (Lista_PDI_Favs lista, char* lnome);
 void print_pdifav(Lista_PDI_Favs lista);
 void procura_lista_pdifav (Lista_PDI_Favs pdi,char* lnome, Lista_PDI_Favs *ant, Lista_PDI_Favs *atual);
 Lista_PDI_Favs pesquisa_lista_pdifav(Lista_PDI_Favs list, char* name);
-void destroi_pdifav(Lista_PDI_Favs **fav,int pos);
+void elimina_pdifav(Lista_PDI_Favs list,char* nome);
 
 
 

@@ -4,17 +4,18 @@
 #include <stdio.h>
 #include <string.h>
 
-Lista_Locais cria_lista_locais(char* lnome){//vai criar a lista com o nome lnome
+Lista_Locais cria_lista_locais(char* lnome,int n){//vai criar a lista com o nome lnome
     Lista_Locais aux;
     aux=(Lista_Locais)malloc(sizeof(struct lnode));
     if (aux!=NULL){
         strcpy(aux->nome_local,lnome);
+        aux->pop=n;
         aux->next=NULL;
     }
     return aux;
 }
 
-void insere_lista_loc (Lista_Locais lista, char* lnome) {
+void insere_lista_loc (Lista_Locais lista, char* lnome,int n) {
     Lista_Locais aux=lista;
     while(aux->next!=NULL){//para encontrar o ultimo aux, para poder adicionar ao fim
         aux=aux->next;
@@ -23,6 +24,7 @@ void insere_lista_loc (Lista_Locais lista, char* lnome) {
     aux=aux->next;
     if (aux!=NULL){
         strcpy(aux->nome_local,lnome);
+        aux->pop=n;
         aux->next=NULL;
     }
 }
@@ -30,9 +32,14 @@ void insere_lista_loc (Lista_Locais lista, char* lnome) {
 void procura_lista_loc (Lista_Locais loc,char* lnome, Lista_Locais *ant, Lista_Locais *atual){
     *ant=loc;//ponteiro inicial
     *atual=loc->next;//ponteiro a apontar para o seguinte
-    while((*atual)!=NULL && strcmp((*atual)->nome_local,lnome)!=0 && strcmp((*ant)->nome_local,lnome)!=0){//enqtn atual nao for o ultimo e as strings nao forem iguais o ant toma o valor do autal e o atual do seguinte
-        *ant=*atual;
-        *atual=(*atual)->next;
+    if(strcmp((*ant)->nome_local,lnome)==0){//caso seja logo o 1º caso
+        *atual=*ant;
+    }
+    else {
+        while ((*atual) != NULL && strcmp((*atual)->nome_local, lnome) !=0) {//enqtn atual nao for o ultimo e as strings nao forem iguais o ant toma o valor do autal e o atual do seguinte
+            *ant = *atual;
+            *atual = (*atual)->next;
+        }
     }
 }
 
@@ -94,4 +101,3 @@ void sort_loc_pref(Lista_Locais loc,Lista_Favs favs){
     Lista_Locais pesq;
 
 }//acabar isto asap
-

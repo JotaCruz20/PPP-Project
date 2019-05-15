@@ -55,3 +55,11 @@ Lista_Favs pesquisa_lista_favs(Lista_Favs list, char* name){//vai usar a procura
     procura_lista_favs(list,name,&ant,&atual);
     return atual;
 }
+
+void imprime_hot(Lista_Hot hot){
+    Lista_Hot aux=hot;
+    if(aux!=NULL) {
+        printf("%s\n", aux->hot);
+        printf("Estes é o seu Ponto Hot.\n");
+    }
+}
