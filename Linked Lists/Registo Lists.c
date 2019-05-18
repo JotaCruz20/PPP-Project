@@ -6,8 +6,7 @@ Lista_Registo cria_lista_registo(char* nome,char* data,char* morada,char* telemo
     Lista_Registo aux;
     aux = (Lista_Registo) malloc(sizeof(struct rnode));
     if (aux != NULL) {
-        aux->nome=malloc(strlen(nome)* sizeof(char));
-        aux->nome=nome;
+        strcpy(aux->nome, nome);
         strcpy(aux->data, data);
         strcpy(aux->cidade, morada);
         strcpy(aux->telemovel, telemovel);
@@ -23,12 +22,19 @@ void insere_lista_reg (Lista_Registo reg,char* nome,char* data,char* morada,char
     aux->next=(Lista_Registo)malloc(sizeof(struct rnode));
     aux=aux->next;
     if (aux!=NULL){
-        aux->nome=malloc(strlen(nome)* sizeof(char));
-        aux->nome=nome;
+        strcpy(aux->nome,nome);
         strcpy(aux->data,data);
         strcpy(aux->cidade,morada);
         strcpy(aux->telemovel,telemovel);
         aux->next=NULL;
+    }
+}
+
+void imprime_lista_reg (Lista_Registo reg){
+    Lista_Registo aux=reg;
+    while(aux!=NULL){
+        printf("%s %s %s %s\n", aux->nome,aux->data,aux->cidade,aux->telemovel);
+        aux=aux->next;
     }
 }
 
