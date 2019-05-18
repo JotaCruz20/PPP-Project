@@ -12,7 +12,6 @@ typedef struct rnode{
 
 Lista_Registo cria_lista_registo(char* nome,char* data,char* morada,char* telemovel);
 void insere_lista_reg (Lista_Registo reg,char* nome,char* data,char* morada,char* telemovel);
-void imprime_lista_reg (Lista_Registo reg);
 void procura_lista_reg (Lista_Registo reg,char* user, Lista_Registo *ant, Lista_Registo *atual);
 Lista_Registo pesquisa_lista_reg(Lista_Registo reg, char* user);
 

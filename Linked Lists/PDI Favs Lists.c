@@ -28,11 +28,11 @@ void insere_lista_pdifavs (Lista_PDI_Favs lista, char* lnome) {
 void print_pdifav(Lista_PDI_Favs lista){
     Lista_PDI_Favs aux=lista;
     if(aux!=NULL) {
+        printf("\nEstes são os seus pontos favoritos\n");
         while (aux != NULL) {
             printf("%s\n", aux->nome_pdi);
             aux = aux->next;
         }
-        printf("Estes são os seus pontos favoritos\n");
     }
 }
 void procura_lista_pdifav (Lista_PDI_Favs pdi,char* lnome, Lista_PDI_Favs *ant, Lista_PDI_Favs *atual){

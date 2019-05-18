@@ -13,7 +13,7 @@ Lista_Registo ler_fich_registo(Lista_Registo reg){
     char nome[50],cidade[20],data[12],telemovel[11],string[100];
     f=fopen(txtr,"r");
     while(fscanf(f,"%[^\n]\n",string)!=EOF){
-        sscanf(string,"%[^ ] %[^ ] %[^ ] %[^\n]\n",nome,cidade,data,telemovel);
+        sscanf(string,"%[^;];%[^;];%[^;];%[^\n]\n",nome,cidade,data,telemovel);
         insere_lista_reg(reg,nome,cidade,data,telemovel);
     }
     return reg;
@@ -51,11 +51,11 @@ void muda_fich(char* user){
     registo=registo->next;//para nao escrever o espaço em branco
     do{
         fputs(registo->nome,f);
-        fputs(" ",f);
+        fputs(";",f);
         fputs(registo->cidade,f);
-        fputs(" ",f);
+        fputs(";",f);
         fputs(registo->data,f);
-        fputs(" ",f);
+        fputs(";",f);
         fputs(registo->telemovel,f);
         fputs(" \n",f);
         registo=registo->next;
@@ -75,11 +75,11 @@ int logtester(char name[50]){//serve para ver se o nome dado existe no file
         count=0;
         memset(string,0,50);
         for(i=0;*(ptr+i)!='\n';i++){
-            if(*(ptr+i)!=' '){//adiciona letra a letra ao vetor
+            if(*(ptr+i)!=';'){//adiciona letra a letra ao vetor
                 string[count]=*(ptr+i);
                 count++;
             }
-            else if(*(ptr+i)==' '){
+            else if(*(ptr+i)==';'){
                 string[count]='\0';
                 count=0;//para começar string do 0
                 if(strcmp(string,name)==0){
@@ -108,19 +108,19 @@ void registo(FILE *file1){//funcao para o registo
         }
     }while(log!=0);
     fputs(name, file1);//Inserir no ficheiro
-    fputs(" ", file1);//Adicionar espaço
+    fputs(";", file1);//Adicionar espaço
     printf("Indique: cidade-\n");//Cidade
     fgets(cid, 20, stdin);
     len = strlen(cid);
     cid[len - 1] = '\0';
     fputs(cid, file1);
-    fputs(" ", file1);
+    fputs(";", file1);
     printf("Indique: data de nascimento-\n");//Data nascimento
     fgets(data, 12, stdin);
     len = strlen(data);
     data[len - 1] = '\0';
     fputs(data, file1);
-    fputs(" ", file1);
+    fputs(";", file1);
     printf("Indique: nº telemovel-\n");//Nº telemovel
     fgets(tele, 10, stdin);
     fputs(tele, file1);

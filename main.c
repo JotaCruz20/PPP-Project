@@ -9,7 +9,7 @@
 #include "Linked Lists/PDI Lists.h"
 #include "Funcoes/Funcoes Viagem.h"
 
-int menu(char* user,Lista_Favs fav){
+void menu(char* user,Lista_Favs fav){
     int n;
     Lista_Locais localpha,locpop;
     localpha=cria_lista_locais(" ",0);

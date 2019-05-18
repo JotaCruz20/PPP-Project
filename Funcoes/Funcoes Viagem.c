@@ -115,7 +115,11 @@ Lista_Viagem pesquisa_lista_viag(Lista_Viagem list, char* name){
 double calc(Lista_Viagem viagem,Lista_Favs fav,Lista_Locais loc){
     double countloc=0,counthot=0,countfav=0,countfavtot=0,countuser=0,media;
     Lista_Favs auxfav=fav->next;
+    Lista_Locais_Favs auxlfav;
+    Lista_PDI_Favs auxpfav;
+    Lista_Hot auxhot;
     Lista_Locais auxloc;
+    Lista_PDI auxp;
     Lista_Viagem pesloc,auxviag,procura=viagem;
     Lista_PDI_Viagem pesq,auxpdi;
     while(auxfav!=NULL){//count para o numero de useres
@@ -124,48 +128,47 @@ double calc(Lista_Viagem viagem,Lista_Favs fav,Lista_Locais loc){
     }
     auxfav=fav;
     while(auxfav!=NULL) {//count para o nº de useres com pelo menos 1 ponto fav na viagem
-        while(auxfav->lfav!=NULL) {
-            pesloc = pesquisa_lista_viag(procura, auxfav->lfav->nome_lfav);
+        auxlfav=auxfav->lfav;
+        while(auxlfav!=NULL) {
+            pesloc = pesquisa_lista_viag(procura, auxlfav->nome_lfav);
             if(pesloc!=NULL){
                 countloc++;
                 break;
             }
-            auxfav->lfav=auxfav->lfav->next;
+            auxlfav=auxlfav->next;
         }
         auxfav = auxfav->next;
     }
     auxfav=fav;
-    while(auxfav!=NULL){//count dos pontos hot
-        auxviag=viagem;
-        while(auxfav->pfav!=NULL){
-            while(auxviag!=NULL){
-                pesq=pesquisa_lista_pdiviag(auxviag->pdiv,auxfav->hot->hot);
-                if(pesq!=NULL){
+    while(auxfav!=NULL) {//count dos pontos hot
+        auxviag = viagem;
+        auxhot = auxfav->hot;
+        if (auxhot != NULL) {
+            while (auxviag != NULL) {
+                pesq = pesquisa_lista_pdiviag(auxviag->pdiv, auxhot->hot);
+                if (pesq != NULL) {
                     counthot++;
                 }
-                auxviag=auxviag->next;
+                auxviag = auxviag->next;
             }
-            auxfav->pfav=auxfav->pfav->next;
         }
-        auxfav=auxfav->next;
+        auxfav = auxfav->next;
     }
     auxloc=loc;
     while (auxloc!=NULL){
-        while(auxloc->pontos!=NULL){
+        auxp=auxloc->pontos;
+        while(auxp!=NULL){
             auxviag=viagem;
             while(auxviag!=NULL){
                 auxpdi=auxviag->pdiv;
-                //while (auxpdi!=NULL){
-                    pesq=pesquisa_lista_pdiviag(auxpdi,auxloc->pontos->nome);
+                    pesq=pesquisa_lista_pdiviag(auxpdi,auxp->nome);
                     if(pesq!=NULL){
-                        countfav=countfav+auxloc->pontos->pop;
-                    //}
-                   // auxpdi=auxpdi->next;
+                        countfav=countfav+auxp->pop;
                 }
                 auxviag=auxviag->next;
             }
-            countfavtot=countfavtot+auxloc->pontos->pop;
-            auxloc->pontos=auxloc->pontos->next;
+            countfavtot=countfavtot+auxp->pop;
+            auxp=auxp->next;
         }
         auxloc=auxloc->next;
     }
@@ -181,17 +184,19 @@ void fazviagem(Lista_Favs fav,Lista_Locais loc,char* user){
     char s=EOF;
     double pop;
     Lista_Locais_Favs auxcount,auxpesq;//auxcount usado para counter, auxpesq usado para pesquisa
-    Lista_Locais pesq,auxloc;//pesq vai sser usado para a pesquisa do local,auxloc vai ser usado para ficar com a linked list loc
+    Lista_Locais pesq;//pesq vai sser usado para a pesquisa do local,auxloc vai ser usado para ficar com a linked list loc
     Lista_Viagem viag,auxadd;//linked list viagem,e onde se vai adicionar os pontos
     Lista_PDI_Viagem auxnull;//vai servir para ver se esta null ou nao
     Lista_Favs pesquser;//pesquser vai por a lista favs no user certo
     Lista_PDI_Favs auxpdi;//auxpdi vai ficar com os pdis favoritos,
     Lista_PDI auxhot,auxfav,auxpdipesq;//auxhot serve para ver se existe o ponto hot,auxfav serve para ver se existe os pontos favs
     pesquser=pesquisa_lista_favs(fav,user);//procurar a lista favorita do user
-    auxcount=pesquser->lfav;
-    while(auxcount!=NULL){//serve para ver e o user ja tem os 3 locais favs
-        count++;
-        auxcount=auxcount->next;
+    if(pesquser!=NULL) {
+        auxcount = pesquser->lfav;
+        while (auxcount != NULL) {//serve para ver e o user ja tem os 3 locais favs
+            count++;
+            auxcount = auxcount->next;
+        }
     }
     if(count==3){
         auxpesq=pesquser->lfav;//pesquisa dos locais

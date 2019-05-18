@@ -28,11 +28,11 @@ void insere_lista_lfavs (Lista_Locais_Favs lista, char* lnome) {
 void print_locfav(Lista_Locais_Favs lista){
     Lista_Locais_Favs aux=lista;
     if(aux!=NULL) {
+        printf("\nEstes são os seus locais favoritos\n");
         while (aux != NULL) {
             printf("%s\n", aux->nome_lfav);
             aux = aux->next;
         }
-        printf("Estes são os seus locais favoritos\n");
     }
 }
 void procura_lista_locfav (Lista_Locais_Favs pdi,char* lnome, Lista_Locais_Favs *ant, Lista_Locais_Favs *atual){

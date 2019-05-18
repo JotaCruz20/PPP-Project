@@ -36,6 +36,9 @@ void insere_lista_favs (Lista_Favs lista, char* user){
     aux=aux->next;
     if (aux!=NULL){
         strcpy(aux->user,user);
+        aux->hot=NULL;
+        aux->pfav=NULL;
+        aux->lfav=NULL;
         aux->next=NULL;
     }
 }
@@ -59,7 +62,7 @@ Lista_Favs pesquisa_lista_favs(Lista_Favs list, char* name){//vai usar a procura
 void imprime_hot(Lista_Hot hot){
     Lista_Hot aux=hot;
     if(aux!=NULL) {
+        printf("\nEstes é o seu Ponto Hot.\n");
         printf("%s\n", aux->hot);
-        printf("Estes é o seu Ponto Hot.\n");
     }
 }

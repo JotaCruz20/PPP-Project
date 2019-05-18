@@ -10,9 +10,9 @@ void addhot(Lista_Favs lista,Lista_Locais loc,char* user,Lista_Favs pesq);
 void remhot(Lista_Favs fav,Lista_Favs pesq);
 void carrega_lista_hot(Lista_Favs fav);
 void write_fav(Lista_Favs Favs);
-void addpfav(Lista_Locais loc,Lista_Favs pesq);
+void addpfav(Lista_Locais loc,Lista_Favs pesq,char* user,Lista_Favs fav);
 void rempfav(Lista_Favs fav,Lista_Favs pesq,Lista_Locais loc);
-void addlfav(Lista_Locais loc,Lista_Favs pesq);
+void addlfav(Lista_Locais loc,Lista_Favs pesq,char* user,Lista_Favs fav);
 void remlfav(Lista_Favs  fav,Lista_Favs pesq,Lista_Locais loc);
 
 #endif //TRABALHO_FINAL_FUNCOES_FAVS_H
