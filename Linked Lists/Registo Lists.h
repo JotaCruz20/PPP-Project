@@ -4,7 +4,7 @@
 typedef struct rnode* Lista_Registo;//linked list pata guardar o Registo dos users
 typedef struct rnode{
     char nome[50];
-    char cidade[20];
+    char cidade[50];
     char data[12];
     char telemovel[10];
     Lista_Registo next;

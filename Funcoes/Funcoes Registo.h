@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 Lista_Registo ler_fich_registo(Lista_Registo reg);
-void muda_fich(char *name);
+void muda_fich(char *name,Lista_Favs fav);
 int logtester(char name[50]);
 void registo(FILE *file1);
 int login(char* user);

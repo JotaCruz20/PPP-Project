@@ -70,7 +70,7 @@
 *Lisboa
 *Pico
 >
-<Malena
+<Madalena
 -Mosteiro dos Jeronimos
 /7 lagoas
 /Baixa do Porto
@@ -232,7 +232,7 @@
 *Porto
 *Nazare
 >
-<Paulo
+<Ric
 -Ria de Aveiro
 /Se de Aveiro
 *Lisboa

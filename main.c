@@ -22,7 +22,7 @@ void menu(char* user,Lista_Favs fav){
         scanf("%d", &n);
         getchar();
         if (n==1) {
-            muda_fich(user);
+            muda_fich(user,fav);
         }
         if (n==2) {
             print_locs(localpha,locpop);
