@@ -204,6 +204,33 @@ Funcoes/Funcoes_Registo.c.s:
 	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Registo.c.s
 .PHONY : Funcoes/Funcoes_Registo.c.s
 
+Funcoes/Funcoes_Viagem.o: Funcoes/Funcoes_Viagem.c.o
+
+.PHONY : Funcoes/Funcoes_Viagem.o
+
+# target to build an object file
+Funcoes/Funcoes_Viagem.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Viagem.c.o
+.PHONY : Funcoes/Funcoes_Viagem.c.o
+
+Funcoes/Funcoes_Viagem.i: Funcoes/Funcoes_Viagem.c.i
+
+.PHONY : Funcoes/Funcoes_Viagem.i
+
+# target to preprocess a source file
+Funcoes/Funcoes_Viagem.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Viagem.c.i
+.PHONY : Funcoes/Funcoes_Viagem.c.i
+
+Funcoes/Funcoes_Viagem.s: Funcoes/Funcoes_Viagem.c.s
+
+.PHONY : Funcoes/Funcoes_Viagem.s
+
+# target to generate assembly for a file
+Funcoes/Funcoes_Viagem.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho_Final.dir/build.make CMakeFiles/Trabalho_Final.dir/Funcoes/Funcoes_Viagem.c.s
+.PHONY : Funcoes/Funcoes_Viagem.c.s
+
 Linked_Lists/Favs_Lists.o: Linked_Lists/Favs_Lists.c.o
 
 .PHONY : Linked_Lists/Favs_Lists.o
@@ -411,6 +438,9 @@ help:
 	@echo "... Funcoes/Funcoes_Registo.o"
 	@echo "... Funcoes/Funcoes_Registo.i"
 	@echo "... Funcoes/Funcoes_Registo.s"
+	@echo "... Funcoes/Funcoes_Viagem.o"
+	@echo "... Funcoes/Funcoes_Viagem.i"
+	@echo "... Funcoes/Funcoes_Viagem.s"
 	@echo "... Linked_Lists/Favs_Lists.o"
 	@echo "... Linked_Lists/Favs_Lists.i"
 	@echo "... Linked_Lists/Favs_Lists.s"

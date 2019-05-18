@@ -165,7 +165,7 @@ void addpfav(Lista_Locais loc,Lista_Favs pesq){
     char ponto[50];
     int flag=1;
     int len;
-    Lista_PDI aux,aux1;
+    Lista_PDI aux,aux1,pesqaux;
     printf("Que ponto quer adicionar?");
     fgets(ponto, 50, stdin);
     len = strlen(ponto);
@@ -183,8 +183,8 @@ void addpfav(Lista_Locais loc,Lista_Favs pesq){
             }
             printf("Ponto Adicionado com sucesso.\n");
             flag=0;
-            loc->pontos=pesquisa_lista_pdi(loc->pontos,ponto);
-            loc->pontos->pop++;
+            pesqaux=pesquisa_lista_pdi(loc->pontos,ponto);
+            pesqaux->pop++;
         }
 
     }
@@ -197,6 +197,8 @@ void rempfav(Lista_Favs fav,Lista_Favs pesq,Lista_Locais loc){
     char ponto[50];
     int len;
     Lista_PDI_Favs aux1;
+    Lista_PDI pdipesq;
+    Lista_Locais aux=loc;
     if(pesq->pfav!=NULL) {//se nao tiver da NULL se ja tiver segue pelo if
         print_pdifav(pesq->pfav);
         printf("Que ponto quer remover?\n");
@@ -214,8 +216,15 @@ void rempfav(Lista_Favs fav,Lista_Favs pesq,Lista_Locais loc){
                 elimina_pdifav(fav->pfav, ponto);
                 printf("Ponto Retirado com sucesso.\n");
             }
-            loc->pontos=pesquisa_lista_pdi(loc->pontos,ponto);
-            loc->pontos->pop--;
+            while(aux!=NULL){//para por-mos a linked list loc no local do ponto para eliminar para podermos retirar 1 a popularidade
+                if(aux->pontos!=NULL) {
+                    pdipesq = pesquisa_lista_pdi(aux->pontos, ponto);
+                    if (pdipesq != NULL) {
+                        pdipesq->pop--;
+                    }
+                }
+                aux=aux->next;
+            }
         } else {
             printf("Esse ponto nao esta na sua lista de favoritos.\n");
         }

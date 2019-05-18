@@ -1,5 +1,5 @@
 <Aveiro;0:
--Parque da Macaca;NE;tambem conhecido como Parque Infante Dom Pedro, tem bastante biodiversidade e espacos amplos para um bom piquenique;1
+-Parque da Macaca;NE;tambem conhecido como Parque Infante Dom Pedro, tem bastante biodiversidade e espacos amplos para um bom piquenique;0
 -Praia da Barra;NE;praia onde a Ria se liga ao mar e onde se pode visitar o seu monumental Farol;0
 -Praia da Costa Nova;NE;uma das mais marcantes praias portuguesas com as cores das tipicas casas utilizadas pelos pescadores;0
 -Ria de Aveiro;NE;lagoa costeira de baixa profundidade por onde se pode partir num moliceiro para uma nova perspetiva da cidade;0
@@ -13,7 +13,7 @@
 -Praia de Carcavelos;NE;praia mais popular da zona de lisboa com magnificas intalacoes;0
 >
 <Coimbra;0:
--Cabra;10/18h;uma visita ao icone da universidade de coimbra;1
+-Cabra;10/18h;uma visita ao icone da universidade de coimbra;0
 -Jardim Botânico;9/20;jardim botanico da universidade coimbra com espaços abertos e verdejantes;0
 -Parque Verde;NE;parque que se estende ao longo do rio mondego perto da baixa coimbrense;0
 -Portugal dos Pequenitos;10/19;parque temático e pedagógico destinado às crianças com um retrato da cultura portuguesa;0
@@ -100,5 +100,41 @@
 -Baixa do Porto;NE;baixa a beira do rio com diversos restaurantes e atividades;0
 -Livraria Lello;9:30/19;famosa livraria portuguesa que serviu de inspiracao a escritora J K Rowling e com uma arquitetura unica;0
 -Palacio de Cristal;8/19;um magnifico espaco verde para passear e onde se podem apreciar belas vistas para o rio;0
--P;8/19;um magnifico espaco verde para passear e onde se podem apreciar belas vistas para o rio;0
+-Ponte de D Luis;NE;famosa ponte icone da cidade e mandada construir pelo rei D Luis no inicio da revolucao industrial;0
+-Torre dos Clerigos;9/19;monumento nacional de visita obrigatoria aos turistas do ponto;0
+>
+<Sao Miguel;0:
+-Farol da Ponta do Arnel;13/16:30;primeiro farol a ser instalado no arquipelago dos acores;0
+-Gruta do Carvao;10/18;grutas com uma origem vulcanica;0
+-Lagoa das Furnas;NE;lagoa relacionada com a atividade vulcanica rodeada de vegetacao, fauna e flora;0
+-Lagoa das Sete Cidades;NE;um dos pontos com maior interesse do arquipelago no qual as lagoas com aguas de diferentes cores deram origem a uma lenda popular;0
+-Poca da Dona Beija;7/23;piscinas termais beneficas para a saude e que tambem sao um bom sitio de relaxamento;0
+>
+<Silves;0:
+-Castelo de Silves;9/22;uma obra notavel de arquitetura militar que nos foi levado pelos arabes;0
+-Cruz de Portugal;NE;das mais belas pecas de arte relativas ao tempo do gotico em portugal;0
+-Museu Municipal de Arqueologia de Silves;0
+-Quinta de Mata Mouros;10/18;museu que passa em revista a historia do algarve e em especial a de silves;0
+-Se de Silves;9/17;construida com arenito vermelho constitui mais um marco do gotico em portugal;0
+>
+<Sintra;0:
+-Cabo da Roca;NE;e considerado o ponto mais ocidental de portugal e da europa continental, sendo visitavel ate um dado limite para prevenir possiveis acidentes;0
+-Castelo dos Mouros;9:30/20;um castelo atualmente em ruinas que em tempos serviu para defender a cidade de sintra;0
+-Parque e Palacio Nacional da Pena;9:30/20;um dos pontos de maior interesse em portugal, revelando varias misturas de diferentes estilos arquitetonicos;0
+-Quinta da Regaleira;9:30/19;um dos mais surpreendentes pontos turisticos da cidade, sendo o seu jardim uma representação do microcosmo;0
+-Serra de Sintra;NE;a famosa serra a qual ninguem escapa com o seu misterio e com a sua beleza natural;0
+>
+<Tavira;0:
+-Castelo de Tavira;8/17;apesar de ja ter sofrido varias alteracoes ao longo do tempo por diferentes povos continua um marco da cidade a visitar;0
+-Centro de Ciencia Viva de Tavira;10/18;espaco interativo que se explora temas ligados a energia e a agua;0
+-Igreja de Santa Maria do Castelo;10/17;igreja matriz da cidade que ha de ter sido construida apos a conquista de tavira aos mouros;0
+-Ilha de Tavira;NE;ilha deserta e arenosa que onde tambem podemos encontrar a praia do barril;0
+-Mercado Municipal de Tavira;7/16;mercado municipal com fruta e alimentos de excelente qualidade;0
+>
+<Terceira;0:
+-Algar do Carvao;14/18;o maior vulcao do mundo que pode ser visitado no seu interior proporcionando vistas unicas e historias sobre a formacao da ilha;0
+-Monte Brasil;NE;monte situado em angra do heroismo com grande biodiversidade e animacao;0
+-Furnas do Enxofre;NE;campo onde ainda se da a saida de certos gases a elevadas temperaturas da terra devido a atividade vulcanica;0
+-Gruta do Natal;14:30/17:15;ganhou o nome devido a celebracao de uma missa alguns anos atras;0
+-Whale Watching;NE;marque o seu passeio de barco com a "Whale Watching" e tenha a oportunidade de avistar baleias, golfinhos, e até algumas tartarugas;0
 >

@@ -6,31 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Favs.c
-Funcoes Favs.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Favs.h
-../Linked Lists/Favs Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.h
-../Linked Lists/Locais Fav Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Fav Lists.h
-../Linked Lists/PDI Favs Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/PDI Favs Lists.h
-../Funcoes/Funcoes Locais-Pdi.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Viagem.c
+Funcoes Viagem.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Viagem.h
+../Linked Lists/Locais Lists.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
 stdio.h
 -
 string.h
 -
+errno.h
+-
 stdlib.h
 -
+math.h
+-
 
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Favs.h
+/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Viagem.h
 ../Linked Lists/Favs Lists.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.h
-../Linked Lists/Locais Lists.h
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
-
-/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Locais-Pdi.h
 ../Linked Lists/Locais Lists.h
 /home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Locais Lists.h
 

@@ -13,10 +13,11 @@ typedef struct lnode{
 
 Lista_Locais cria_lista_locais(char* lnome,int n);
 void imprime_lista_loc (Lista_Locais locais);
-void insere_lista_loc (Lista_Locais lista, char* lnome,int n);
+void insere_lista_loc_alpha (Lista_Locais lista, char* lnome,int n);
+void insere_lista_loc_pop (Lista_Locais lista, char* lnome,int n);
 void procura_lista_loc (Lista_Locais loc,char* nome, Lista_Locais *ant, Lista_Locais *atual);
+void procura_lista_insert(Lista_Locais loc,char* nome, Lista_Locais *ant, Lista_Locais *atual);
+void procura_lista_insert_pop(Lista_Locais loc,int n, Lista_Locais *ant, Lista_Locais *atual);
 Lista_Locais pesquisa_lista_loc(Lista_Locais list, char* name);
-void sort_loc(Lista_Locais loc);
-void sort_loc_pref(Lista_Locais loc,Lista_Favs fav);
 
 #endif //TRABALHO_FINAL_LOCAIS_LISTS_H

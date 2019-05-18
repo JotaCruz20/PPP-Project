@@ -96,6 +96,12 @@
 		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Registo.h">
 			<Option target="Trabalho_Final"/>
 		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Viagem.c">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Funcoes/Funcoes Viagem.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
 		<Unit filename="/home/hak/Desktop/PPP/Trabalho Final/PPP-Project/Linked Lists/Favs Lists.c">
 			<Option target="Trabalho_Final"/>
 		</Unit>
