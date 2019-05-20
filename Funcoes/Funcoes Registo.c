@@ -45,9 +45,11 @@ void muda_fich(char* user,Lista_Favs fav){
             printf("\nO username ja esta em uso, use outro.\n");
         }
     }while(log!=0);
-    strcpy(user,change);
-    strcpy(pesq->user,change);
+    if(pesq!=NULL) {
+        strcpy(pesq->user, change);
+    }
     strcpy(aux->nome,change);
+    strcpy(user,change);
     do {
         printf("Indique: data(No maximo 12 chars)-\n");//Cidade
         fgets(change, 50, stdin);
@@ -132,6 +134,16 @@ void registo(FILE *file1){//funcao para o registo
     }while(log!=0);
     fputs(reg, file1);//Inserir no ficheiro
     fputs(";", file1);//Adicionar espaço
+    memset(reg,0,50);
+    do {
+        printf("Indique: cidade(No maximo 50 chars)-\n");//Cidade
+        fgets(reg, 50, stdin);
+        len = strlen(reg);
+        reg[len - 1] = '\0';
+    }while(len>50);
+    fputs(reg, file1);
+    fputs(";", file1);
+    memset(reg,0,50);
     do {
         printf("Indique: data de nascimento(No Maximo 12 chars)-\n");//Data nascimento
         fgets(reg, 50, stdin);
@@ -141,18 +153,10 @@ void registo(FILE *file1){//funcao para o registo
     fputs(reg,file1);
     fputs(";", file1);
     do {
-        printf("Indique: cidade(No maximo 50 chars)-\n");//Cidade
+        printf("Indique: Nº Telemovel(No maximo 9 chars)-\n");//Cidade
         fgets(reg, 50, stdin);
         len = strlen(reg);
-        reg[len - 1] = '\0';
-    }while(len>50);
-    fputs(reg, file1);
-    fputs(";", file1);
-    do {
-        printf("Indique: nº telemovel(No Maximo 9 chars)-\n");//Nº telemovel
-        fgets(reg, 10, stdin);
-        len = strlen(reg);
-        reg[len - 1] = '\0';
+        reg[len-1] = '\0';
     }while(len>10);
     fputs(reg, file1);
     fputs("\n", file1);
@@ -168,4 +172,3 @@ int login(char* user){//funcao para o login
         return 0;
     }
 }
-

@@ -135,7 +135,7 @@ void addhot(Lista_Favs fav,Lista_Locais loc,char* user,Lista_Favs pesq) {
         flag=0;
     }
     else {
-        printf("Que ponto quer adicionar?");
+        printf("Que Ponto Hot quer adicionar?");
         fgets(ponto, 50, stdin);
         len = strlen(ponto);
         ponto[len - 1] = '\0';
