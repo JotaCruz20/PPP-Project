@@ -7,8 +7,8 @@
 >
 <Coimbra;11:
 -Cabra;10/18h;uma visita ao icone da universidade de coimbra;6
--Jardim Botânico;9/20;jardim botanico da universidade coimbra com espaços abertos e verdejantes;2
 -Universidade de Coimbra;8/20;a primeira universidade do país e das mais antigas do mundo, atualmente com 3 polos distintos e diversas areas de estudo;3
+-Jardim Botânico;9/20;jardim botanico da universidade coimbra com espaços abertos e verdejantes;2
 -Portugal dos Pequenitos;10/19;parque temático e pedagógico destinado às crianças com um retrato da cultura portuguesa;1
 -Parque Verde;NE;parque que se estende ao longo do rio mondego perto da baixa coimbrense;0
 >

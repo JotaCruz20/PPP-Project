@@ -3,12 +3,14 @@
 #include <stdio.h>
 #include <string.h>
 
-Lista_Registo cria_lista_registo(char* nome,char* data,char* morada,char* telemovel) {
+Lista_Registo cria_lista_registo(char* nome,int dia,int mes,int ano,char* morada,char* telemovel) {
     Lista_Registo aux;
     aux = (Lista_Registo) malloc(sizeof(struct rnode));
     if (aux != NULL) {
         strcpy(aux->nome, nome);
-        strcpy(aux->data, data);
+        aux->date.dia=dia;
+        aux->date.mes=mes;
+        aux->date.ano=ano;
         strcpy(aux->cidade, morada);
         strcpy(aux->telemovel, telemovel);
         aux->next = NULL;
@@ -16,7 +18,7 @@ Lista_Registo cria_lista_registo(char* nome,char* data,char* morada,char* telemo
     return aux;
 }
 
-void insere_lista_reg (Lista_Registo reg,char* nome,char* data,char* morada,char* telemovel){
+void insere_lista_reg (Lista_Registo reg,char* nome,int dia,int mes,int ano,char* morada,char* telemovel){
     Lista_Registo aux=reg;
     while(aux->next!=NULL){//para encontrar o ultimo aux, para poder adicionar ao fim
         aux=aux->next;
@@ -25,7 +27,9 @@ void insere_lista_reg (Lista_Registo reg,char* nome,char* data,char* morada,char
     aux=aux->next;
     if (aux!=NULL){
         strcpy(aux->nome,nome);
-        strcpy(aux->data,data);
+        aux->date.dia=dia;
+        aux->date.mes=mes;
+        aux->date.ano=ano;
         strcpy(aux->cidade,morada);
         strcpy(aux->telemovel,telemovel);
         aux->next=NULL;

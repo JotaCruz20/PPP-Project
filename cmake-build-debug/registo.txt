@@ -1,30 +1,28 @@
-Joao;Bidoeira de Cima;; 
-Bia;Tabua;; 
-Rita;Cartaxo;; 
-Ana;Lisboa;; 
-Rosa;Pontevel;; 
-Loreto;Coimbra;; 
-Patricia;Pico;; 
-Eduardo;Santarem;; 
-Lena;Madrid;; 
-Manuel;Cartaxo;; 
-Mariana;Leiria;; 
-Maryah;Lisboa;; 
-Duarte;Cascais;; 
-Emilia;Evora;; 
-Mia;Ereira;; 
-Mara;Fafe;; 
-Gustavo;Porto;; 
-Bela;Nazare;; 
-Ricardo;Azambuja;; 
-Susana;Viseu;; 
-Luis;Regaleira;; 
-Dalila;Lisboa;; 
-Rafaela;Porto;; 
-Rafael;Tomar;; 
-Dalia;Nazare;; 
-Ric;Vila Nova do Conde;; 
-Monica;Portimao;; 
-Paula;Tavira;; 
-Rafa;Vila Nova de Gaia;; 
-JoaoCruz;Beira Interior;; 
+Joao;Leiria;9/0/7;915918995    
+Bia;Tabua;9/0/7;963954045    
+Rita;Cartaxo;9/0/7;913918995    
+Ana;Lisboa;9/0/7;953964945    
+Rosa;Pontevel;9/0/7;946286481    
+Loreto;Coimbra;9/0/7;917482946    
+Patricia;Pico;9/0/7;926492654    
+Eduardo;Santarem;9/0/7;919830681    
+Malena;Evora;9/0/7;918430705    
+Manuel;Cartaxo;9/0/7;916748291    
+Mariana;Leiria;9/0/7;987654321    
+Joana;Toledo;9/0/7;918273645    
+Duarte;Cascais;9/0/7;943782581    
+Emilia;Evora;9/0/7;981276345    
+Mia;Ereira;9/0/7;937326838    
+Mara;Fafe;9/0/7;945825492    
+Gustavo;Porto;15/12/1997;    
+Anabela;Setubal;15/12/1997;924583719    
+Ricardo;Azambuja;15/12/1997;938126735    
+Susana;Viseu;15/12/1997;972448261    
+Luis;Regaleira;15/12/1997;971368251    
+Antonio;Beja;15/12/1997;916471942    
+Rafaela;Porto;15/12/1997;928351956    
+Rafael;Tomar;15/12/1997;963831570    
+Dalia;Nazare;15/12/1997;971437193    
+ric;Vila Nova de Gaia;15/12/1997;91499129    
+rics;Vila Nova de Gaia;15/12/1997;915918995   
+Rics;Leiria;13/11/2000;915991895 

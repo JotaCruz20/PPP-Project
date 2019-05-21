@@ -116,7 +116,6 @@ double calc(Lista_Viagem viagem,Lista_Favs fav,Lista_Locais loc){
     double countloc=0,counthot=0,countfav=0,countfavtot=0,countuser=0,media;
     Lista_Favs auxfav=fav->next;
     Lista_Locais_Favs auxlfav;
-    Lista_PDI_Favs auxpfav;
     Lista_Hot auxhot;
     Lista_Locais auxloc;
     Lista_PDI auxp;
@@ -184,12 +183,12 @@ void fazviagem(Lista_Favs fav,Lista_Locais loc,char* user){
     char s=EOF;
     double pop;
     Lista_Locais_Favs auxcount,auxpesq;//auxcount usado para counter, auxpesq usado para pesquisa
-    Lista_Locais pesq;//pesq vai sser usado para a pesquisa do local,auxloc vai ser usado para ficar com a linked list loc
+    Lista_Locais pesq,auxloc=loc;//pesq vai sser usado para a pesquisa do local,auxloc vai ser usado para ficar com a linked list loc
     Lista_Viagem viag,auxadd;//linked list viagem,e onde se vai adicionar os pontos
     Lista_PDI_Viagem auxnull;//vai servir para ver se esta null ou nao
     Lista_Favs pesquser;//pesquser vai por a lista favs no user certo
     Lista_PDI_Favs auxpdi;//auxpdi vai ficar com os pdis favoritos,
-    Lista_PDI auxhot,auxfav,auxpdipesq;//auxhot serve para ver se existe o ponto hot,auxfav serve para ver se existe os pontos favs
+    Lista_PDI auxhot,auxpdipesq,auxp,pdipesq;//auxhot serve para ver se existe o ponto hot,auxfav serve para ver se existe os pontos favs
     pesquser=pesquisa_lista_favs(fav,user);//procurar a lista favorita do user
     if(pesquser!=NULL) {
         auxcount = pesquser->lfav;
@@ -225,13 +224,20 @@ void fazviagem(Lista_Favs fav,Lista_Locais loc,char* user){
                 insere_pdi_viagem(auxadd->pdiv,auxhot->nome);
                 countpdi++;
             }
-            while(auxpdi!=NULL && countpdi!=3){//vai servir para os pdis favs
-               auxfav=pesquisa_lista_pdi(pesq->pontos,auxpdi->nome_pdi);
-               if(auxfav!=NULL){
-                   insere_pdi_viagem(auxadd->pdiv,auxpdi->nome_pdi);
-                   countpdi++;
-               }
-                auxpdi=auxpdi->next;
+            while(auxloc!=NULL) {
+                auxp=auxloc->pontos;
+                while(auxp!=NULL) {
+                    while (auxpdi != NULL && countpdi != 3) {//vai servir para os pdis favs
+                        pdipesq = pesquisa_lista_pdi(auxp, auxpdi->nome_pdi);
+                        if (pdipesq != NULL) {
+                            insere_pdi_viagem(auxadd->pdiv, auxpdi->nome_pdi);
+                            countpdi++;
+                        }
+                        auxpdi = auxpdi->next;
+                    }
+                    auxp=auxp->next;
+                }
+                auxloc=auxloc->next;
             }
             if(countpdi<3){//caso ainda nao estejam 3 pontos na viagem pomos por odem de popoularidade
                 auxpdipesq=pesq->pontos;

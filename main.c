@@ -22,7 +22,7 @@ void menu(char* user,Lista_Favs fav,Lista_Registo reg){
         scanf("%d", &n);
         getchar();
         if (n==1) {
-            muda_fich(user,fav,reg);
+           muda_fich(user,fav,reg);
         }
         if (n==2) {
             print_locs(localpha,locpop);
@@ -48,7 +48,7 @@ void menu(char* user,Lista_Favs fav,Lista_Registo reg){
 
 int main() {
     Lista_Favs fav=cria_lista_favs(" ");
-    Lista_Registo regist=cria_lista_registo(" "," "," "," "),reg;
+    Lista_Registo regist=cria_lista_registo(" ",0,0,0," "," "),reg;
     reg=ler_fich_registo(regist);
     int n,log,len;
     char user[50];

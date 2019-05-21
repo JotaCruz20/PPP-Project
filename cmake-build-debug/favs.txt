@@ -107,7 +107,7 @@
 *Aveiro
 *Cascais
 >
-<Duarte
+<Marega
 -Se de Aveiro
 /Catedral de Evora
 /Marina de Faro
@@ -161,14 +161,10 @@
 *Nazare
 *Fatima
 >
-<Ricardo
--Ponte 25 de Abril
-/Jardim Botanico da Madeira
-/Museu CR7
-/Pico do Areeiro
-*Terceira
-*Pico
-*Lagos
+<ric
+-Ria de Aveiro
+/Se de Aveiro
+*Lisboa
 >
 <Susana
 -Ermida da Memoria
@@ -234,9 +230,6 @@
 *Nazare
 >
 <Ric
--Ria de Aveiro
-/Se de Aveiro
-*Lisboa
 >
 <Sonia
 -Zoomarine
