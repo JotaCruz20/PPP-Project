@@ -169,34 +169,47 @@ void remhot(Lista_Favs fav,Lista_Favs pesq){
 
 void addpfav(Lista_Locais loc,Lista_Favs pesq,char* user,Lista_Favs fav){
     char ponto[50];
-    int flag=1;
+    int flag=1,flagpesq=1;
     int len;
     Lista_PDI aux,aux1,pesqaux;
+    Lista_PDI_Favs auxpdifav,pesqpdifav;
     printf("Que ponto quer adicionar?");
     fgets(ponto, 50, stdin);
     len = strlen(ponto);
     ponto[len - 1] = '\0';
     if(pesq==NULL) {
-        insere_lista_favs(fav,user);
-        pesq=pesquisa_lista_favs(fav,user);
+        insere_lista_favs(fav, user);
+        pesq = pesquisa_lista_favs(fav, user);
     }
-    while (loc->next != NULL) {
-        loc = loc->next;//Isto pois o 1º node da lista esta a branco
-        aux1 = loc->pontos;//aux1 fica com a linked list dos pdis
-        aux = pesquisa_lista_pdi(aux1, ponto);//vai procurar na linked list dos pdis pelo nome do pdi hot q o user deu
-        if (aux != NULL) {
-            if(pesq->pfav==NULL){
-                pesq->pfav=cria_lista_pdifavs(ponto);
-            }
-            else {
-                insere_lista_pdifavs(pesq->pfav, ponto);//insere
-            }
-            printf("Ponto Adicionado com sucesso.\n");
+    auxpdifav=pesq->pfav;
+    while(auxpdifav!=NULL) {
+        pesqpdifav = pesquisa_lista_pdifav(auxpdifav, ponto);
+        if (pesqpdifav != NULL) {
+            flagpesq = 0;
             flag=0;
-            pesqaux=pesquisa_lista_pdi(loc->pontos,ponto);
-            pesqaux->pop++;
         }
-
+        auxpdifav = auxpdifav->next;
+    }
+    if(flagpesq==1) {
+        while (loc->next != NULL) {
+            loc = loc->next;//Isto pois o 1º node da lista esta a branco
+            aux1 = loc->pontos;//aux1 fica com a linked list dos pdis
+            aux = pesquisa_lista_pdi(aux1,
+                                     ponto);//vai procurar na linked list dos pdis pelo nome do pdi hot q o user deu
+            if (aux != NULL) {
+                if (pesq->pfav == NULL) {
+                    pesq->pfav = cria_lista_pdifavs(ponto);
+                } else {
+                    insere_lista_pdifavs(pesq->pfav, ponto);//insere
+                }
+                printf("Ponto Adicionado com sucesso.\n");
+                flag = 0;
+                pesqaux = pesquisa_lista_pdi(loc->pontos, ponto);
+                pesqaux->pop++;
+            }
+        }
+    } else{
+        printf("Já tem esse ponto como favorito. Adicione outro.");
     }
     if(flag==1){
         printf("Houve um erro ao adicionar o PDI Hot, verifique que adicionou um PDI que existe listado.\n");
@@ -275,16 +288,16 @@ void remlfav(Lista_Favs fav,Lista_Favs pesq,Lista_Locais loc){
         }
     }
     } else{
-        printf("Não tem ainda pdis favoritos.\n");
+        printf("Não tem ainda local favoritos.\n");
     }
 }
 
 void addlfav(Lista_Locais loc,Lista_Favs pesq,char* user,Lista_Favs fav){
     char ponto[50];
-    int flag=1;
+    int flag=1,flagpesq=1;
     int len,count=0;
     Lista_Locais aux;
-    Lista_Locais_Favs aux1;
+    Lista_Locais_Favs aux1,auxpesq,auxfvloc;
     if(pesq!=NULL) {
         aux1=pesq->lfav;
         while (aux1 != NULL) {
@@ -301,25 +314,38 @@ void addlfav(Lista_Locais loc,Lista_Favs pesq,char* user,Lista_Favs fav){
         flag=0;
     }
     else{
-        printf("Que ponto quer adicionar?");
+        printf("Que local quer adicionar?");
         fgets(ponto, 50, stdin);
         len = strlen(ponto);
         ponto[len - 1] = '\0';
-        while (loc->next != NULL) {
-            loc = loc->next;//Isto pois o 1º node da lista esta a branco
-            aux = pesquisa_lista_loc(loc, ponto);//vai procurar na linked list dos locais pelo nome do pdi hot q o user deu
-            if (aux != NULL && flag==1) {
-                if (pesq->lfav == NULL) {
-                    pesq->lfav = cria_lista_lfavs(ponto);
-                }
-                else {
-                    insere_lista_lfavs(pesq->lfav,ponto);//insere
-                }
-                loc=pesquisa_lista_loc(loc,ponto);
-                loc->pop++;
-                printf("Local Adicionado com sucesso.\n");
-                flag=0;
+        auxfvloc=pesq->lfav;
+        while(auxfvloc!=NULL) {
+            auxpesq = pesquisa_lista_locfav(auxfvloc, ponto);
+            if (auxpesq != NULL) {
+                flagpesq = 0;
             }
+            auxfvloc = auxfvloc->next;
+        }
+        if(flagpesq==1) {
+            while (loc->next != NULL) {
+                loc = loc->next;//Isto pois o 1º node da lista esta a branco
+                aux = pesquisa_lista_loc(loc,ponto);//vai procurar na linked list dos locais pelo nome do pdi hot q o user deu
+                if (aux != NULL && flag == 1) {
+                    if (pesq->lfav == NULL) {
+                        pesq->lfav = cria_lista_lfavs(ponto);
+                    } else {
+                        insere_lista_lfavs(pesq->lfav, ponto);//insere
+                    }
+                    loc = pesquisa_lista_loc(loc, ponto);
+                    loc->pop++;
+                    printf("Local Adicionado com sucesso.\n");
+                    flag = 0;
+                }
+            }
+        }
+        else{
+            printf("Já tem esse local nos seus favoritos.Adicione outro.");
+            flag=0;
         }
     }
     if(flag==1){

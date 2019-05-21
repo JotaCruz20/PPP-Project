@@ -100,3 +100,19 @@ void imprime_lista_loc (Lista_Locais locais){//serve para imprimir a lista loc
         aux=aux->next;
     }
 }
+
+int lista_vazia_loc(Lista_Locais reg)
+{
+    return (reg->next == NULL ? 1 : 0);
+}
+
+Lista_Locais destroi_loc(Lista_Locais loc) {
+    Lista_Favs temp_ptr;
+    while (lista_vazia_loc(loc) == 0) {
+        temp_ptr = loc;
+        loc = loc->next;
+        free(temp_ptr);
+    }
+    free(loc);
+    return NULL;
+}

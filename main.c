@@ -9,7 +9,7 @@
 #include "Linked Lists/PDI Lists.h"
 #include "Funcoes/Funcoes Viagem.h"
 
-void menu(char* user,Lista_Favs fav){
+void menu(char* user,Lista_Favs fav,Lista_Registo reg){
     int n;
     Lista_Locais localpha,locpop;
     localpha=cria_lista_locais(" ",0);
@@ -22,7 +22,7 @@ void menu(char* user,Lista_Favs fav){
         scanf("%d", &n);
         getchar();
         if (n==1) {
-            muda_fich(user,fav);
+            muda_fich(user,fav,reg);
         }
         if (n==2) {
             print_locs(localpha,locpop);
@@ -39,12 +39,18 @@ void menu(char* user,Lista_Favs fav){
     }while(n!=5);
     write_fav(fav);
     write_locais(locpop);
+    write_reg(reg);
+    reg=destroi_reg(reg);
+    fav=destroi_fav(fav);
+    localpha=destroi_loc(localpha);
+    locpop=destroi_loc(locpop);
 }
 
 int main() {
     Lista_Favs fav=cria_lista_favs(" ");
+    Lista_Registo regist=cria_lista_registo(" "," "," "," "),reg;
+    reg=ler_fich_registo(regist);
     int n,log,len;
-    FILE *fra;
     char user[50];
     printf("Bem Vindo.");
     do {
@@ -55,27 +61,26 @@ int main() {
             printf("Escolha uma das opções dadas.\n");
         }
     }while(n!=1 && n!=2);
-    fra=fopen("registo.txt","a");
     if (n == 1){
         printf("\nIndique o seu username: ");
         fgets(user,50,stdin);
         len=strlen(user);
         user[len-1]='\0';
-        log=login(user);
+        log=login(user,reg);
         if(log==0){
             do{
                 printf("\nO seu user nao existe, pretende: 1-Criar um / 2-Tentar outra vez: ");
                 scanf("%d", &n);
                 getchar();
                 if(n==1){
-                    registo(fra);
+                    registo(reg,user);
                 }
                 else if(n==2){
                     printf("\nIndique o seu username: ");
                     fgets(user,50,stdin);
                     len=strlen(user);
                     user[len-1]='\0';
-                    log=login(user);
+                    log=login(user,reg);
                 }
                 else{
                     printf("Escolha uma das opções.\n");
@@ -84,11 +89,11 @@ int main() {
         }
     }
     else{
-        registo(fra);
+        registo(regist,user);
     }
     carrega_lista_hot(fav);
     if(fav->next==NULL){//caso seja a 1º vez q se esteja a usar o programa o ficheiro vai estar em branco e vai dar erro.
         load_names(fav);
     }
-    menu(user,fav);
+    menu(user,fav,reg);
 }

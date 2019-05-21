@@ -21,6 +21,7 @@ Lista_Favs cria_lista_favs(char* user){
     }
     return aux;
 }
+
 Lista_Favs insere_hot_favs(Lista_Favs list,char* hot,char* user){
     Lista_Favs aux;
     aux=pesquisa_lista_favs(list,user);//serve para adicionar o ponto hot no user certo
@@ -65,4 +66,20 @@ void imprime_hot(Lista_Hot hot){
         printf("\nEstes é o seu Ponto Hot.\n");
         printf("%s\n", aux->hot);
     }
+}
+
+int lista_vazia_fav(Lista_Favs reg)
+{
+    return (reg->next == NULL ? 1 : 0);
+}
+
+Lista_Favs destroi_fav(Lista_Favs fav) {
+    Lista_Favs temp_ptr;
+    while (lista_vazia_fav(fav) == 0) {
+        temp_ptr = fav;
+        fav = fav->next;
+        free(temp_ptr);
+    }
+    free(fav);
+    return NULL;
 }

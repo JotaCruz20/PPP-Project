@@ -214,7 +214,12 @@ void fazviagem(Lista_Favs fav,Lista_Locais loc,char* user){
                 auxadd=pesquisa_lista_viag(viag,auxpesq->nome_lfav);
                 auxadd->pdiv=cria_pdi_viagem(" ");
             }
-            auxhot=pesquisa_lista_pdi(pesq->pontos,pesquser->hot->hot);//vai ver se o ponot hot do user existe nesse local
+            if(pesquser->hot!=NULL) {
+                auxhot = pesquisa_lista_pdi(pesq->pontos,pesquser->hot->hot);//vai ver se o ponot hot do user existe nesse local
+            }
+            else{
+                auxhot=NULL;
+            }
             auxadd=pesquisa_lista_viag(viag,auxpesq->nome_lfav);
             if(auxhot!=NULL){//caso exista adiciona ao pdi da viagem
                 insere_pdi_viagem(auxadd->pdiv,auxhot->nome);
@@ -245,7 +250,7 @@ void fazviagem(Lista_Favs fav,Lista_Locais loc,char* user){
         pop=calc(viag,fav,loc);
         printf("A taxa de popularidade da sua viagem é %lf%%.\n",pop);
         do{
-            printf("Quando pretender voltar para o menu inicial clicque em qualquer butão.\n");
+            printf("Quando pretender voltar para o menu inicial clicque em qualquer botão.\n");
             scanf("%c",&s);
         }while(s==EOF);
     }

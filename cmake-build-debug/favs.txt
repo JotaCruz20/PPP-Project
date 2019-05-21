@@ -2,9 +2,11 @@
 -Cabra
 /Castelo de Obidos
 /Lagoa de Obidos
+/Universidade de Coimbra
 /Ilha Deserta
-*Coimbra
+*Lisboa
 *Aveiro
+*Coimbra
 >
 <Bia
 -Museu Abilio
@@ -150,7 +152,7 @@
 *Guimaraes
 *Nazare
 >
-<Anabela
+<Bela
 -Santuario da Penha
 /Igreja de Santo Antonio
 /Mosteiro dos Jeronimos
@@ -188,7 +190,7 @@
 *Aveiro
 *Lisboa
 >
-<Antonio
+<Dalila
 -Torre de Belem
 /Gruta do Carvao
 /Cruz de Portugal
@@ -199,7 +201,7 @@
 *Porto
 *Guimaraes
 >
-<Rafaela
+<Rafita
 -Universidade de Coimbra
 /Lagoa das Furnas
 /Quinta de Mata Mouros
@@ -221,7 +223,7 @@
 *Coimbra
 *Lisboa
 >
-<Dalia
+<Lisboa
 -Jardim Botânico
 /Poca da Dona Beija
 /Serra de Sintra
@@ -255,4 +257,13 @@
 *Coimbra
 *Lisboa
 *Evora
+>
+<JoaoCruz
+-Ria de Aveiro
+/Cabra
+/Universidade de Coimbra
+/Mosteiro dos Jeronimos
+*Lisboa
+*Coimbra
+*Aveiro
 >

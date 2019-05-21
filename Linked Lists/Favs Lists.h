@@ -27,5 +27,7 @@ Lista_Favs pesquisa_lista_favs(Lista_Favs list, char* name);
 void imprime_hot(Lista_Hot fav);
 Lista_Hot cria_lista_hot(char* ponto);
 
+Lista_Favs destroi_fav(Lista_Favs fav);
+
 
 #endif //TRABALHO_FINAL_FAVS_LISTS_H

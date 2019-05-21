@@ -1,5 +1,6 @@
 #include "Funcoes Registo.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <errno.h>
 #include "../Linked Lists/Locais Lists.h"
 #include "../Linked Lists/Registo Lists.h"
@@ -25,22 +26,19 @@ Lista_Registo ler_fich_registo(Lista_Registo reg){
     return reg;
 }
 
-void muda_fich(char* user,Lista_Favs fav){
-    Lista_Registo registo,aux;
+void muda_fich(char* user,Lista_Favs fav,Lista_Registo reg){
+    Lista_Registo aux;
     Lista_Favs pesq;
-    FILE *f;
     int leng,log;
     char change[50];
-    registo=cria_lista_registo(" "," "," "," ");
-    registo=ler_fich_registo(registo);
-    aux=pesquisa_lista_reg(registo,user);
+    aux=pesquisa_lista_reg(reg,user);
     pesq=pesquisa_lista_favs(fav,user);
     do {
         printf("Indique: username-\n");//Nome
         fgets(change, 50, stdin);
         leng = strlen(change);
         change[leng - 1] = '\0';//Tirar o paragrafo
-        log=logtester(change);//Para confirmar que nao existe um user com o mesmo username
+        log=logtester(change,reg);//Para confirmar que nao existe um user com o mesmo username
         if(log!=0){
             printf("\nO username ja esta em uso, use outro.\n");
         }
@@ -71,104 +69,95 @@ void muda_fich(char* user,Lista_Favs fav){
         change[leng-1] = '\0';
     }while(leng>10);
     strcpy(aux->telemovel,change);
-    registo=registo->next;//para nao escrever o espaço em branco
-    f=fopen(txtr,"w");
-    do{
-        fputs(registo->nome,f);
-        fputs(";",f);
-        fputs(registo->cidade,f);
-        fputs(";",f);
-        fputs(registo->data,f);
-        fputs(";",f);
-        fputs(registo->telemovel,f);
-        fputs(" \n",f);
-        registo=registo->next;
-    }while(registo!=NULL);
 }
 
-int logtester(char name[50]){//serve para ver se o nome dado existe no file
-    FILE *file;
-    file=fopen("registo.txt","r");
-    char read[100],string[50];
-    char *ptr;
-    int i,count=0;
-    if(file==NULL){
-        printf("Erro %s", strerror(errno));
-    }
-    while(fgets(read,100,file)!=NULL){
-        ptr=read;
-        count=0;
-        memset(string,0,50);
-        for(i=0;*(ptr+i)!='\n';i++){
-            if(*(ptr+i)!=';'){//adiciona letra a letra ao vetor
-                string[count]=*(ptr+i);
-                count++;
-            }
-            else if(*(ptr+i)==';'){
-                string[count]='\0';
-                count=0;//para começar string do 0
-                if(strcmp(string,name)==0){
-                    return 1;
-                }
-                memset(string,0,50);//limpa a string
-            }
+int logtester(char* name,Lista_Registo reg){//serve para ver se o nome dado existe no file
+    Lista_Registo aux=reg;
+    while (aux!=NULL) {
+        if (strcmp(aux->nome, name) == 0) {
+            return 1;
         }
-    }return 0;
+        aux = aux->next;
+    }
+    return 0;
 }
 
-void registo(FILE *file1){//funcao para o registo
+void registo(Lista_Registo reg,char* user){//funcao para o registo
     int len,log;
-    char reg[50];
-    if(file1==NULL){
-        printf("Erro %s", strerror(errno));
-    }
+    char nome[50],cidade[50],data[12],tele[10];
     do {
         printf("Indique: username-\n");//Nome
-        fgets(reg, 50, stdin);
-        len = strlen(reg);
-        reg[len - 1] = '\0';//Tirar o paragrafo
-        log=logtester(reg);//Para confirmar que nao existe um user com o mesmo username
+        fgets(nome, 50, stdin);
+        len = strlen(nome);
+        nome[len - 1] = '\0';//Tirar o paragrafo
+        log=logtester(nome,reg);//Para confirmar que nao existe um user com o mesmo username
         if(log!=0){
             printf("\nO username ja esta em uso, use outro.\n");
         }
     }while(log!=0);
-    fputs(reg, file1);//Inserir no ficheiro
-    fputs(";", file1);//Adicionar espaço
-    memset(reg,0,50);
+    strcpy(user,nome);
     do {
         printf("Indique: cidade(No maximo 50 chars)-\n");//Cidade
-        fgets(reg, 50, stdin);
-        len = strlen(reg);
-        reg[len - 1] = '\0';
+        fgets(cidade,50, stdin);
+        len = strlen(cidade);
+        cidade[len - 1] = '\0';
     }while(len>50);
-    fputs(reg, file1);
-    fputs(";", file1);
-    memset(reg,0,50);
     do {
         printf("Indique: data de nascimento(No Maximo 12 chars)-\n");//Data nascimento
-        fgets(reg, 50, stdin);
-        len = strlen(reg);
-        reg[len - 1] = '\0';
-    }while(len>12) ;
-    fputs(reg,file1);
-    fputs(";", file1);
+        fgets(data, 50, stdin);
+        len = strlen(data);
+        data[len - 1] = '\0';
+    }while(len>12);
     do {
         printf("Indique: Nº Telemovel(No maximo 9 chars)-\n");//Cidade
-        fgets(reg, 50, stdin);
-        len = strlen(reg);
-        reg[len-1] = '\0';
+        fgets(tele, 50, stdin);
+        len = strlen(tele);
+        tele[len-1] = '\0';
     }while(len>10);
-    fputs(reg, file1);
-    fputs("\n", file1);
+
+    insere_lista_reg(reg,nome,data,cidade,tele);
 }
 
-int login(char* user){//funcao para o login
+int login(char* user,Lista_Registo reg){//funcao para o login
     int logf;
-    logf=logtester(user);
+    logf=logtester(user,reg);
     if(logf==1){
         return 1;
     }
     else{
         return 0;
     }
+}
+
+void write_reg(Lista_Registo reg){
+    FILE *f;
+    f=fopen(txtr,"w");
+    Lista_Registo registo=reg->next;
+    do {
+        fputs(registo->nome, f);
+        fputs(";", f);
+        fputs(registo->cidade, f);
+        fputs(";", f);
+        fputs(registo->data, f);
+        fputs(";", f);
+        fputs(registo->telemovel, f);
+        fputs(" \n", f);
+        registo = registo->next;
+    }while(registo!=NULL);
+}
+
+int lista_vazia(Lista_Registo reg)
+{
+    return (reg->next == NULL ? 1 : 0);
+}
+
+Lista_Registo destroi_reg(Lista_Registo reg) {
+    Lista_Registo temp_ptr;
+    while (lista_vazia(reg) == 0) {
+        temp_ptr = reg;
+        reg = reg->next;
+        free(temp_ptr);
+    }
+    free(reg);
+    return NULL;
 }
