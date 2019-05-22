@@ -19,5 +19,6 @@ int lista_vazia_reg(Lista_Registo reg);
 Lista_Registo destroi_reg(Lista_Registo reg);
 int verifica_numero(char* num,int len);
 int verifica_data(int n,char* num);
+int verifica_opcao(char n,int max);
 
 #endif //TRABALHO_FINAL_FUNCOES_REGISTO_H

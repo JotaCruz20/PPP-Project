@@ -4,6 +4,7 @@
 #include "../Linked Lists/Locais Lists.h"
 #include "../Linked Lists/Registo Lists.h"
 #include "../Linked Lists/PDI Lists.h"
+#include "../Funcoes/Funcoes Registo.h"
 #include <string.h>
 #define txtl "locais.txt"
 #define txtr "registo.txt"
@@ -73,9 +74,18 @@ void carrega_locais_e_pdis_pop(Lista_Locais loc){
 
 void print_locs(Lista_Locais local,Lista_Locais locpop){
     int n;
+    char num;
     do {
-        printf("1-Organizado por ordem alfabetica\n2-Organizado por popularidade\n3-Voltar atras\n");
-        scanf("%d",&n);
+        do {
+            printf("1-Organizado por ordem alfabetica\n2-Organizado por popularidade\n3-Voltar atras\n");
+            num=getchar();
+            getchar();
+            n = verifica_opcao(num, 3);
+            if(n==0){
+                printf("Escolha uma das opções.\n");
+                getchar();
+            }
+        }while (n==0);
         if (n == 1) {
             imprime_lista_loc(local);
             printf("Organizado por Nome,Descrição,Horario(NE significa que Nao Existe)\n");
@@ -86,9 +96,6 @@ void print_locs(Lista_Locais local,Lista_Locais locpop){
         }
         else if(n==3){
             break;
-        }
-        else{
-            printf("Escolha uma das opções.\n");
         }
     }while(n==1 || n==2);
 }

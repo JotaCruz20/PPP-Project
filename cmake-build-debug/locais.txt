@@ -5,14 +5,14 @@
 -Ponte 25 de Abril;NE;maior ponte suspensa da europa e que ganhou o nome em homenagem à revolucao dos cravos;0
 -Pavilhao do Conhecimento;10/18;pavilhao cultural com diferentes exposicoes tematicas temporarias o ano todo;0
 >
-<Coimbra;11:
+<Coimbra;12:
 -Cabra;10/18h;uma visita ao icone da universidade de coimbra;6
 -Universidade de Coimbra;8/20;a primeira universidade do país e das mais antigas do mundo, atualmente com 3 polos distintos e diversas areas de estudo;3
 -Jardim Botânico;9/20;jardim botanico da universidade coimbra com espaços abertos e verdejantes;2
 -Portugal dos Pequenitos;10/19;parque temático e pedagógico destinado às crianças com um retrato da cultura portuguesa;1
 -Parque Verde;NE;parque que se estende ao longo do rio mondego perto da baixa coimbrense;0
 >
-<Aveiro;9:
+<Aveiro;10:
 -Praia da Barra;NE;praia onde a Ria se liga ao mar e onde se pode visitar o seu monumental Farol;3
 -Ria de Aveiro;NE;lagoa costeira de baixa profundidade por onde se pode partir num moliceiro para uma nova perspetiva da cidade;1
 -Praia da Costa Nova;NE;uma das mais marcantes praias portuguesas com as cores das tipicas casas utilizadas pelos pescadores;1
@@ -61,6 +61,13 @@
 -Grutas de Mira de Aire;9:30/18;visita a uma das 7 maravilhas naturais de Portugal;1
 -Casa de Lucia;9/18;casa onde nasceu e viveu a irmã lucia, um dos pastorinhos presente nas aparicoes de Fatima;1
 >
+<Faro;4:
+-Marina de Faro;NE;um dos portos mais conhecidos do sul do país com animação para toda a família;1
+-Islands 4 You;9/19:30;passeios de barco pela ria formosa;1
+-Ilha Deserta;NE;uma ilha deserta, tal como o nome indica, com a praia da barreta;1
+-Zoomarine;10/18;um parque aquático temático com exibições e espetáculos;1
+-Sé de Faro;10:15/18:30;Se com uma juncao de estilos arquitetonicos influentes na area ao longo do tempo;0
+>
 <Terceira;3:
 -Whale Watching;NE;marque o seu passeio de barco com a "Whale Watching" e tenha a oportunidade de avistar baleias, golfinhos, e até algumas tartarugas;1
 -Gruta do Natal;14:30/17:15;ganhou o nome devido a celebracao de uma missa alguns anos atras;1
@@ -81,13 +88,6 @@
 -Buddha Eden;9/18;maior jardim oriental da europa criado como forma de protesto contra a destruição de budas gigantes em Bamyan;1
 -Aqueduto de Obidos;NE;tambem conhecido como aqueduto da Usseira, representa mais uma das marcas da presenca romana em Portugal;1
 -Museu Abilio;10/18;museu dedicado a obra do artista portugues que cresceu e passou o resto da sua vida em obidos;0
->
-<Faro;3:
--Marina de Faro;NE;um dos portos mais conhecidos do sul do país com animação para toda a família;1
--Islands 4 You;9/19:30;passeios de barco pela ria formosa;1
--Ilha Deserta;NE;uma ilha deserta, tal como o nome indica, com a praia da barreta;1
--Zoomarine;10/18;um parque aquático temático com exibições e espetáculos;0
--Sé de Faro;10:15/18:30;Se com uma juncao de estilos arquitetonicos influentes na area ao longo do tempo;0
 >
 <Cascais;3:
 -Praia de Carcavelos;NE;praia mais popular da zona de lisboa com magnificas intalacoes;1

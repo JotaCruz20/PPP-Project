@@ -257,7 +257,8 @@ void fazviagem(Lista_Favs fav,Lista_Locais loc,char* user){
         printf("A taxa de popularidade da sua viagem é %lf%%.\n",pop);
         do{
             printf("Quando pretender voltar para o menu inicial clicque em qualquer botão.\n");
-            scanf("%c",&s);
+            s=getchar();
+            getchar();
         }while(s==EOF);
     }
     else{

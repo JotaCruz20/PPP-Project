@@ -3,6 +3,7 @@
 #include "../Linked Lists/Locais Fav Lists.h"
 #include "../Linked Lists/PDI Favs Lists.h"
 #include "../Funcoes/Funcoes Locais-Pdi.h"
+#include "../Funcoes/Funcoes Registo.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -101,7 +102,7 @@ void load_names(Lista_Favs fav){
     char string[50],name[15];
     char* ptr;
     f=fopen(txtr,"r");
-    while(fgets(string,100,f)!=NULL){
+    while(fgets(string,50,f)!=NULL){
         ptr=string;
         count=0;
         flag=1;
@@ -354,13 +355,20 @@ void addlfav(Lista_Locais loc,Lista_Favs pesq,char* user,Lista_Favs fav){
 }
 
 void rem_add(Lista_Favs  fav,Lista_Locais loc,char* user){
+    char num;
     int n;
-    Lista_Favs pesq;
-    printf("Escolha uma das opções: \n1-Adicionar PDI Hot\n2-Adicionar PDI Favorito\n3-Adicionar Local Favorito\n4-Remover PDI Hot\n5-Remover PDI Favorito\n6-Remover Local Favorito\n7-Listagem dos seus pontos favoritos\n8-Voltar atras\n");
-    scanf("%d",&n);
-    getchar();
-    pesq=pesquisa_lista_favs(fav,user);
+    Lista_Favs pesq=pesquisa_lista_favs(fav,user);
     do{
+        do {
+            printf("Escolha uma das opções: \n1-Adicionar PDI Hot\n2-Adicionar PDI Favorito\n3-Adicionar Local Favorito\n4-Remover PDI Hot\n5-Remover PDI Favorito\n6-Remover Local Favorito\n7-Listagem dos seus pontos favoritos\n8-Voltar atras\n");
+            num=getchar();
+            getchar();
+            n = verifica_opcao(num, 8);
+            if(n==0){
+                printf("Insira uma das opções");
+                getchar();
+            }
+        }while(n==0);
         if(n==1){
             addhot(fav,loc,user,pesq);
         }
@@ -392,9 +400,6 @@ void rem_add(Lista_Favs  fav,Lista_Locais loc,char* user){
         }
         else if(n==8){
             break;
-        }
-        else{
-            printf("Escolha uma das opções.\n");
         }
     }while(n<1 || n>8);
 }

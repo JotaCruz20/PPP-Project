@@ -260,3 +260,10 @@
 *Coimbra
 *Aveiro
 >
+<Julia
+-Cabra
+/Zoomarine
+*Aveiro
+*Coimbra
+*Faro
+>

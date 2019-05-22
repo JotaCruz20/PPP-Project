@@ -11,30 +11,35 @@
 
 void menu(char* user,Lista_Favs fav,Lista_Registo reg){
     int n;
+    char s;
     Lista_Locais localpha,locpop;
     localpha=cria_lista_locais(" ",0);
     locpop=cria_lista_locais(" ",0);
     carrega_locais_e_pdis_alpha(localpha);
     carrega_locais_e_pdis_pop(locpop);
     do {
-        printf("\nMENU");
-        printf("\nEscolha o que quer fazer:\n1-Alterar dados\n2-Listagem dos Locais e PDIs\n3-Preferencias\n4-Construir Viagem\n5-Fechar\n");
-        scanf("%d", &n);
-        getchar();
+        do {
+            printf("\nMENU");
+            printf("\nEscolha o que quer fazer:\n1-Alterar dados\n2-Listagem dos Locais e PDIs\n3-Preferencias\n4-Construir Viagem\n5-Fechar\n");
+            s=getchar();
+            getchar();
+            n = verifica_opcao(s, 5);
+            if(n==0){
+                printf("Escolha uma das opções.\n");printf("Escolha uma das opções.\n");
+                getchar();
+            }
+        }while (n==0);
         if (n==1) {
            muda_fich(user,fav,reg);
         }
-        if (n==2) {
+        else if (n==2) {
             print_locs(localpha,locpop);
         }
-        if(n==3){
+        else if(n==3){
             rem_add(fav,locpop,user);
         }
-        if(n==4){
+        else if(n==4){
             fazviagem(fav,locpop,user);
-        }
-        if(n<1 || n>5){
-            printf("Escolha uma das opções.\n");
         }
     }while(n!=5);
     write_fav(fav);
@@ -51,14 +56,16 @@ int main() {
     Lista_Registo regist=cria_lista_registo(" ",0,0,0," "," "),reg;
     reg=ler_fich_registo(regist);
     int n,log,len;
-    char user[50];
+    char user[50],num;
     printf("Bem Vindo.");
     do {
         printf("Indique se quer: 1-Login / 2-Novo registo: ");
-        scanf("%d", &n);
+        num=getchar();
         getchar();
+        n=verifica_opcao(num,2);
         if(n!=1 && n!=2){
             printf("Escolha uma das opções dadas.\n");
+            getchar();
         }
     }while(n!=1 && n!=2);
     if (n == 1){
@@ -70,8 +77,9 @@ int main() {
         if(log==0){
             do{
                 printf("\nO seu user nao existe, pretende: 1-Criar um / 2-Tentar outra vez: ");
-                scanf("%d", &n);
+                num=getchar();
                 getchar();
+                n=verifica_opcao(num,2);
                 if(n==1){
                     registo(reg,user);
                 }
@@ -84,6 +92,7 @@ int main() {
                 }
                 else{
                     printf("Escolha uma das opções.\n");
+                    getchar();
                 }
             }while(log==0 || n<1 || n>2);
         }
