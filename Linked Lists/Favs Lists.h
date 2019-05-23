@@ -10,7 +10,7 @@ typedef struct hnode{
 
 
 
-typedef struct fnode* Lista_Favs;//linked list para guardar os locais e PDIS
+typedef struct fnode* Lista_Favs;//linked list para guardar favs
 typedef struct fnode{
     char user[50];
     Lista_Hot hot;

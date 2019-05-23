@@ -1,27 +1,31 @@
-Joao;Leiria;6/8/2000;915918995 
-Bia;Tabua;6/12/1999;963954045 
-Rita;Cartaxo;5/5/5555;913918995 
-Ana;Lisboa;12/12/2000;953964945 
-Rosa;Pontevel;31/7/2000;946286481 
-Loreto;Coimbra;30/5/2000;917482946 
-Patricia;Pico;27/1/1980;926492654 
-Eduardo;Santarem;3/11/1973;919830681 
-Malena;Evora;19/11/1975;918430705 
-Manuel;Cartaxo;5/11/2005;916748291 
-Mariana;Leiria;3/5/2000;987654321 
-Joana;Toledo;17/9/2004;918273645 
-Duarte;Cascais;27/12/1998;943782581 
-Emilia;Evora;2/10/1950;981276345 
-Mia;Ereira;18/6/1995;937326838 
-Mara;Fafe;16/7/2000;945825492 
-Gustavo;Porto;15/12/1997; 
-Anabela;Setubal;29/2/1991;924583719 
-Ricardo;Azambuja;15/10/1974;938126735 
-Susana;Viseu;10/11/1980;972448261 
-Luis;Regaleira;1/1/2001;971368251 
-Antonio;Beja;31/10/1999;916471942 
-Rafaela;Porto;24/4/1943;928351956 
-Rafael;Tomar;17/3/1996;963831570 
-Dalia;Nazare;21/3/2000;971437193 
-Julia;Coimbra;9/3/2003;915918823 
-Bea;Vila Nova de Gaia;9/12/2000;102012020 
+Joao;Leiria; 6/8/2000;915918995  
+Bia;Tabua; 9/5/2007;963954045  
+Rita;Cartaxo; 19/5/2000;913918995  
+Ana;Lisboa; 2/2/1995;953964945  
+Rosa;Pontevel; 15/2/1985;946286481  
+Loreto;Coimbra; 9/11/2010;917482946  
+Patricia;Pico; 31/1/2002;926492654  
+Eduardo;Santarem; 28/2/2001;919830681  
+Malena;Evora; 6/8/2000;918430705  
+Manuel;Cartaxo; 6/12/1999;916748291  
+Mariana;Leiria; 24/9/2005;987654321  
+Joana;Toledo; 2/5/1990;918273645  
+Duarte;Cascais; 12/3/2005;943782581  
+Emilia;Evora; 12/3/1995;981276345  
+Mia;Ereira; 21/5/1998;937326838  
+Mara;Fafe; 9/11/2010;945825492  
+Gustavo;Porto; 6/1/2000;915918992  
+Anabela;Setubal; 6/5/2012;924583719  
+Ricardo;Azambuja; 16/11/2012;938126735  
+Susana;Viseu; 20/1/1985;972448261  
+Luis;Regaleira; 2/5/1985;971368251  
+Antonio;Beja; 22/12/1980;912391239  
+Rafaela;Porto; 21/2/1990;928351956  
+Rafael;Tomar; 1/12/1995;963831570  
+Dalia;Nazare; 1/1/2000;971437193  
+Julia;Coimbra; 11/2/2000;915918823  
+Bea;Vila Nova de Gaia; 1/11/2010;102012020  
+Jota;Vila Nova de Mil Fontes; 5/12/2000;914819223  
+Jota da Cruz;Leiria; 12/12/2000;912929129  
+Paulo;Aveiro; 5/10/1999;912939290  
+Guga;Ilhavo; 12/12/1993;915918993  

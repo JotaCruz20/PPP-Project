@@ -2,7 +2,6 @@
 #include "../Linked Lists/Locais Lists.h"
 #include <stdio.h>
 #include <string.h>
-#include <errno.h>
 #include <stdlib.h>
 #include <math.h>
 
@@ -262,6 +261,6 @@ void fazviagem(Lista_Favs fav,Lista_Locais loc,char* user){
         }while(s==EOF);
     }
     else{
-        printf("Selecione 3 locais favoritos.");
+        printf("Selecione 3 locais favoritos.\n");
     }
 }

@@ -17,7 +17,7 @@
 *Lisboa
 *Nazare
 >
-<User
+<Rita
 -Museu dos Baleeiros
 /Ponta da Queimada
 /Palacio de Cristal
@@ -71,7 +71,7 @@
 *Lisboa
 *Pico
 >
-<Madalena
+<Malena
 -Mosteiro dos Jeronimos
 /7 lagoas
 /Baixa do Porto
@@ -98,7 +98,7 @@
 *Coimbra
 *Fatima
 >
-<Espanhola
+<Joana
 -Muralhas
 /Boca do Inferno
 /Praia da Costa Nova
@@ -107,7 +107,7 @@
 *Aveiro
 *Cascais
 >
-<Marega
+<Duarte
 -Se de Aveiro
 /Catedral de Evora
 /Marina de Faro
@@ -152,7 +152,7 @@
 *Guimaraes
 *Nazare
 >
-<Bela
+<Anabela
 -Santuario da Penha
 /Igreja de Santo Antonio
 /Mosteiro dos Jeronimos
@@ -161,7 +161,7 @@
 *Nazare
 *Fatima
 >
-<ric
+<Ricardo
 -Ria de Aveiro
 /Se de Aveiro
 *Lisboa
@@ -186,7 +186,7 @@
 *Aveiro
 *Lisboa
 >
-<Dalila
+<Antonio
 -Torre de Belem
 /Gruta do Carvao
 /Cruz de Portugal
@@ -197,7 +197,7 @@
 *Porto
 *Guimaraes
 >
-<Rafita
+<Rafaela
 -Universidade de Coimbra
 /Lagoa das Furnas
 /Quinta de Mata Mouros
@@ -219,8 +219,8 @@
 *Coimbra
 *Lisboa
 >
-<Lisboa
--Jardim Botânico
+<Dalia
+-Jardim Botanico
 /Poca da Dona Beija
 /Serra de Sintra
 /Mercado Municipal de Tavira
@@ -229,9 +229,7 @@
 *Porto
 *Nazare
 >
-<Ric
->
-<Sonia
+<Julia
 -Zoomarine
 /Ria de Aveiro
 /Cabra
@@ -241,29 +239,38 @@
 *Coimbra
 *Porto
 >
-<Paula
--Cabra
->
-<Rafa
--Algar do Carvao
-/Cabra
-*Coimbra
-*Lisboa
-*Evora
->
-<JoaoCruz
--Ria de Aveiro
+<Jota
+-Oceanario de Lisboa
+/Mosteiro dos Jeronimos
 /Cabra
 /Universidade de Coimbra
-/Mosteiro dos Jeronimos
-*Lisboa
+/Jardim Botanico
+/Praia da Barra
+/Parque da Macaca
 *Coimbra
+*Lisboa
 *Aveiro
 >
-<Julia
--Cabra
+<Jota da Cruz
+*Aveiro
+*Silves
+*Obidos
+>
+<Paulo
+-Farol da Nazare
+>
+<guga
+-Islands 4 You
+/Ria de Aveiro
 /Zoomarine
 *Aveiro
-*Coimbra
 *Faro
+*Parque Nacional Peneda Gerês
+>
+<Guga
+-Praia da Barra
+/Poca da Dona Beija
+*Lagos
+*Obidos
+*Porto
 >

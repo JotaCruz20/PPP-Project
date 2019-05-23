@@ -1,12 +1,11 @@
-#include "Funcoes Registo.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <errno.h>
+#include <string.h>
+#include "Funcoes Registo.h"
 #include "../Linked Lists/Locais Lists.h"
 #include "../Linked Lists/Registo Lists.h"
 #include "../Linked Lists/PDI Lists.h"
 #include "../Linked Lists/Favs Lists.h"
-#include <string.h>
 #define txtl "locais.txt"
 #define txtr "registo.txt"
 
@@ -44,6 +43,11 @@ int verifica_data(int n,char* num){
             return 0;
         }
     }
+    else if(n==2){
+        if(date<1950 || date>2019){
+            return 0;
+        }
+    }
     return 1;
 }
 
@@ -64,6 +68,9 @@ Lista_Registo ler_fich_registo(Lista_Registo reg){
     f=fopen(txtr,"r");
     while(fscanf(f,"%[^\n]\n",string)!=EOF){
         sscanf(string,"%[^;];%[^;];%[^;];%[^\n]\n",nome,cidade,data,telemovel);
+        if(data[0]=='\0'){
+            data[0]='0';
+        }
         sscanf(data, "%d/%d/%d",&dia,&mes,&ano);
         insere_lista_reg(reg,nome,dia,mes,ano,cidade,telemovel);
         memset(nome,0,50);
@@ -72,6 +79,7 @@ Lista_Registo ler_fich_registo(Lista_Registo reg){
         memset(telemovel,0,11);
         memset(string,0,100);
     }
+    fclose(f);
     return reg;
 }
 
@@ -95,7 +103,7 @@ void muda_user(Lista_Registo reg,Lista_Favs pesq,char* user){
             printf("\nO username ja esta em uso, use outro.\n");
         }
     }while(log!=0);
-    if(pesq!=NULL) {
+    if(pesq!=NULL) {//para mudar o nome na pesquisa
         strcpy(pesq->user, nome);
     }
     strcpy(aux->nome,nome);
@@ -105,7 +113,7 @@ void muda_user(Lista_Registo reg,Lista_Favs pesq,char* user){
 
 void muda_data(Lista_Registo reg){
     char data[10];
-    int dia,mes,ano,len,checkn,checkd;
+    int dia,mes,ano,len,checkn,checkd;//checkn flag para ver se é numero, checkd flag para ver se e um dia possivel
     printf("Indique: data de nascimento\n");//Data nascimento
     do {
         printf("Indique: dia-\n");
@@ -139,10 +147,11 @@ void muda_data(Lista_Registo reg){
         len=strlen(data);
         data[len-1]='\0';
         checkn=verifica_numero(data,len);
-        if(checkn==0){
-            printf("Erro ao modificar! Escreva um numero.\n");
+        checkd=verifica_data(2,data);
+        if(checkn==0 || checkd==0){
+            printf("Erro ao modificar! Escreva um ano entre 1950 e 2019.\n");
         }
-    }while(checkn!=1);
+    }while(checkn!=1 || checkd!=1);
     ano=atoi(data);
     reg->date.ano=ano;
     printf("Data Mudada com sucesso!\n");
@@ -166,20 +175,80 @@ void muda_morada(Lista_Registo reg){
 }
 
 void muda_tele(Lista_Registo reg){
-    char tele[11];
+    char tele[20];
     int check,len;
     do {
         printf("Indique: Nº Telemovel(9 numeros)-\n");//Cidade
-        fgets(tele, 11, stdin);
+        fgets(tele, 20, stdin);
         len = strlen(tele);
         tele[len-1] = '\0';
         check=verifica_numero(tele,len);
         if(check==0){
-            printf("Erro ao modificar! Escreva so numeros e 9 algarismos.\n");
+            printf("Erro ao registar o telemovel! Insira um numero.\n");
         }
     }while(len!=10 || check!=1);
     strcpy(reg->telemovel,tele);
     printf("Telemovel Mudado com Sucesso!\n");
+}
+
+int logtester(char* name,Lista_Registo reg){//serve para ver se o nome dado existe no file
+    Lista_Registo aux=reg;
+    while (aux!=NULL) {
+        if (strcmp(aux->nome, name) == 0) {
+            return 1;
+        }
+        aux = aux->next;
+    }
+    return 0;
+}
+
+int login(char* user,Lista_Registo reg){//funcao para o login
+    int logf;
+    logf=logtester(user,reg);
+    if(logf==1){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+int lista_vazia_reg(Lista_Registo reg)
+{
+    return (reg->next == NULL ? 1 : 0);
+}
+
+Lista_Registo destroi_reg(Lista_Registo reg) {
+    Lista_Registo temp_ptr;
+    while (lista_vazia_reg(reg) == 0) {
+        temp_ptr = reg;
+        reg = reg->next;
+        free(temp_ptr);
+    }
+    free(reg);
+    return NULL;
+}
+
+void write_reg(Lista_Registo reg){
+    FILE *f;
+    f=fopen(txtr,"w");
+    Lista_Registo registo=reg->next;
+    do {
+        fputs(registo->nome, f);
+        fputs(";", f);
+        fputs(registo->cidade, f);
+        fputs("; ", f);
+        fprintf(f,"%d",registo->date.dia);
+        fputs("/",f);
+        fprintf(f,"%d",registo->date.mes);
+        fputs("/",f);
+        fprintf(f,"%d",registo->date.ano);
+        fputs(";", f);
+        fputs(registo->telemovel, f);
+        fputs(" \n", f);
+        registo = registo->next;
+    }while(registo!=NULL);
+    fclose(f);
 }
 
 void muda_fich(char* user,Lista_Favs fav,Lista_Registo reg) {
@@ -191,7 +260,7 @@ void muda_fich(char* user,Lista_Favs fav,Lista_Registo reg) {
     pesq = pesquisa_lista_favs(fav, user);
     do {
         do {
-            printf("Indique o que pretende mudar:\n1-User\n2-Cidade\n3-Data\n4-Telemovel\n5-Sair\n ");
+            printf("Indique o que pretende mudar:\n1-User %s \n2-Cidade %s \n3-Data %d/%d/%d \n4-Telemovel %s \n5-Sair\n",aux->nome,aux->cidade,aux->date.dia,aux->date.mes,aux->date.ano,aux->telemovel);
             num=getchar();
             getchar();
             n = verifica_opcao(num, 5);
@@ -212,17 +281,6 @@ void muda_fich(char* user,Lista_Favs fav,Lista_Registo reg) {
             break;
         }
     }while(n<1 || n>5);
-}
-
-int logtester(char* name,Lista_Registo reg){//serve para ver se o nome dado existe no file
-    Lista_Registo aux=reg;
-    while (aux!=NULL) {
-        if (strcmp(aux->nome, name) == 0) {
-            return 1;
-        }
-        aux = aux->next;
-    }
-    return 0;
 }
 
 void registo(Lista_Registo reg,char* user){//funcao para o registo
@@ -286,10 +344,11 @@ void registo(Lista_Registo reg,char* user){//funcao para o registo
         len=strlen(data);
         data[len-1]='\0';
         checkn=verifica_numero(data,len);
-        if(checkn==0){
-            printf("Erro ao registar o ano! Insira um numero.\n");
+        checkd=verifica_data(2,data);
+        if(checkn==0 || checkd==0){
+            printf("Erro ao registar o ano! Insira um ano entre 1950 e 2019.\n");
         }
-    }while(checkn!=1);
+    }while(checkn!=1 || checkd!=1);
     ano=atoi(data);
     do {
         printf("Indique: Nº Telemovel(9 numeros)-\n");//Cidade
@@ -302,52 +361,4 @@ void registo(Lista_Registo reg,char* user){//funcao para o registo
         }
     }while(len!=10 || checkn!=1);
     insere_lista_reg(reg,nome,dia,mes,ano,cidade,tele);
-}
-
-int login(char* user,Lista_Registo reg){//funcao para o login
-    int logf;
-    logf=logtester(user,reg);
-    if(logf==1){
-        return 1;
-    }
-    else{
-        return 0;
-    }
-}
-
-void write_reg(Lista_Registo reg){
-    FILE *f;
-    f=fopen(txtr,"w");
-    Lista_Registo registo=reg->next;
-    do {
-        fputs(registo->nome, f);
-        fputs(";", f);
-        fputs(registo->cidade, f);
-        fputs(";", f);
-        fprintf(f,"%d",registo->date.dia);
-        fputs("/",f);
-        fprintf(f,"%d",registo->date.mes);
-        fputs("/",f);
-        fprintf(f,"%d",registo->date.ano);
-        fputs(";", f);
-        fputs(registo->telemovel, f);
-        fputs(" \n", f);
-        registo = registo->next;
-    }while(registo!=NULL);
-}
-
-int lista_vazia_reg(Lista_Registo reg)
-{
-    return (reg->next == NULL ? 1 : 0);
-}
-
-Lista_Registo destroi_reg(Lista_Registo reg) {
-    Lista_Registo temp_ptr;
-    while (lista_vazia_reg(reg) == 0) {
-        temp_ptr = reg;
-        reg = reg->next;
-        free(temp_ptr);
-    }
-    free(reg);
-    return NULL;
 }
