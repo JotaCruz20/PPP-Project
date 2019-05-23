@@ -107,7 +107,7 @@ int lista_vazia_loc(Lista_Locais reg)
 }
 
 Lista_Locais destroi_loc(Lista_Locais loc) {
-    Lista_Favs temp_ptr;
+    Lista_Locais temp_ptr;
     while (lista_vazia_loc(loc) == 0) {
         temp_ptr = loc;
         loc = loc->next;

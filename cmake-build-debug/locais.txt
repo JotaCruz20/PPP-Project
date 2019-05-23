@@ -1,9 +1,16 @@
 <Lisboa;16:
 -Mosteiro dos Jeronimos;10/18:30;mosteiro portugues da Ordem de Sao Jeronimo, hoje conhecido como o panteao nacional;4
 -Oceanario de Lisboa;10/20;um dos maiores oceanarios do mundo com biodiversidade dos 5 oceanos do planeta;2
--Pavilhao do Conhecimento;10/18;pavilhao cultural com diferentes exposicoes tematicas temporarias o ano todo;0
--Ponte 25 de Abril;NE;maior ponte suspensa da europa e que ganhou o nome em homenagem à revolucao dos cravos;0
 -Torre de Belem;10/17;construida com o fim de defender a barra de lisboa, e hoje em dia uma referencia cultural da capital;0
+-Ponte 25 de Abril;NE;maior ponte suspensa da europa e que ganhou o nome em homenagem à revolucao dos cravos;0
+-Pavilhao do Conhecimento;10/18;pavilhao cultural com diferentes exposicoes tematicas temporarias o ano todo;0
+>
+<Aveiro;13:
+-Praia da Barra;NE;praia onde a Ria se liga ao mar e onde se pode visitar o seu monumental Farol;4
+-Ria de Aveiro;NE;lagoa costeira de baixa profundidade por onde se pode partir num moliceiro para uma nova perspetiva da cidade;2
+-Parque da Macaca;NE;tambem conhecido como Parque Infante Dom Pedro, tem bastante biodiversidade e espacos amplos para um bom piquenique;1
+-Praia da Costa Nova;NE;uma das mais marcantes praias portuguesas com as cores das tipicas casas utilizadas pelos pescadores;1
+-Se de Aveiro;9/19h;o culto mariano ligado às gentes de aveiro;1
 >
 <Coimbra;13:
 -Cabra;10/18h;uma visita ao icone da universidade de coimbra;7
@@ -12,129 +19,122 @@
 -Portugal dos Pequenitos;10/19;parque temático e pedagógico destinado às crianças com um retrato da cultura portuguesa;1
 -Parque Verde;NE;parque que se estende ao longo do rio mondego perto da baixa coimbrense;0
 >
-<Aveiro;13:
--Praia da Barra;NE;praia onde a Ria se liga ao mar e onde se pode visitar o seu monumental Farol;4
--Ria de Aveiro;NE;lagoa costeira de baixa profundidade por onde se pode partir num moliceiro para uma nova perspetiva da cidade;2
--Se de Aveiro;9/19h;o culto mariano ligado às gentes de aveiro;1
--Praia da Costa Nova;NE;uma das mais marcantes praias portuguesas com as cores das tipicas casas utilizadas pelos pescadores;1
--Parque da Macaca;NE;tambem conhecido como Parque Infante Dom Pedro, tem bastante biodiversidade e espacos amplos para um bom piquenique;1
->
-<Porto;7:
--Baixa do Porto;NE;baixa a beira do rio com diversos restaurantes e atividades;1
--Livraria Lello;9:30/19;famosa livraria portuguesa que serviu de inspiracao a escritora J K Rowling e com uma arquitetura unica;1
--Palacio de Cristal;8/19;um magnifico espaco verde para passear e onde se podem apreciar belas vistas para o rio;1
--Ponte de D Luis;NE;famosa ponte icone da cidade e mandada construir pelo rei D Luis no inicio da revolucao industrial;1
--Torre dos Clerigos;9/19;monumento nacional de visita obrigatoria aos turistas do ponto;1
->
 <Nazare;7:
--Farol da Nazare;10/18;famoso farol simbolo da terra de onde se podem observar as famosas ondas do canhao da nazare;1
--Mercado Municipal de Nazare;8/13;mercado onde não há de faltar o peixe fresco trazido pelas famosas nazarenas;1
--Praia da Nazare;NE;uma das praias mais famosas de portugal nao so pelas incriveis ondas como pela agua gelada;1
 -Santuario da Nossa Senhora da Nazare;9/19;santuario que remota ao seculo XIV e que apenas permanece intacto até hoje graças à ação dos pescadores;1
+-Praia da Nazare;NE;uma das praias mais famosas de portugal nao so pelas incriveis ondas como pela agua gelada;1
+-Mercado Municipal de Nazare;8/13;mercado onde não há de faltar o peixe fresco trazido pelas famosas nazarenas;1
+-Farol da Nazare;10/18;famoso farol simbolo da terra de onde se podem observar as famosas ondas do canhao da nazare;1
 -Ermida da Memoria;10/19;pequena capela que celebra o milagre de nossa senhora de nazare;0
 >
+<Porto;7:
+-Torre dos Clerigos;9/19;monumento nacional de visita obrigatoria aos turistas do ponto;1
+-Ponte de D Luis;NE;famosa ponte icone da cidade e mandada construir pelo rei D Luis no inicio da revolucao industrial;1
+-Palacio de Cristal;8/19;um magnifico espaco verde para passear e onde se podem apreciar belas vistas para o rio;1
+-Livraria Lello;9:30/19;famosa livraria portuguesa que serviu de inspiracao a escritora J K Rowling e com uma arquitetura unica;1
+-Baixa do Porto;NE;baixa a beira do rio com diversos restaurantes e atividades;1
+>
 <Madeira;6:
--Cabo Girao;NE;um dos pontos populares de observação do arquipélago;1
--Jardim Botanico da Madeira;9/18;jardim com diversas espécies de plantas provenientes dos 5 continentes;1
--Museu CR7;10/18;museu com base na vida e nas vitórias do ‘craque’ portugues Cristiano Ronaldo;1
 -Pico do Areeiro;NE;sendo o terceiro ponto mais alto da ilha, marca um ponto de divisao entre 3 concelhos do arquipelago;1
+-Museu CR7;10/18;museu com base na vida e nas vitórias do ‘craque’ portugues Cristiano Ronaldo;1
+-Jardim Botanico da Madeira;9/18;jardim com diversas espécies de plantas provenientes dos 5 continentes;1
+-Cabo Girao;NE;um dos pontos populares de observação do arquipélago;1
 -Mercado dos Lavradores;8/19;mercado com o estilo arquitetónico próprio da época do Estado Novo;0
->
-<Obidos;5:
--Aqueduto de Obidos;NE;tambem conhecido como aqueduto da Usseira, representa mais uma das marcas da presenca romana em Portugal;1
--Buddha Eden;9/18;maior jardim oriental da europa criado como forma de protesto contra a destruição de budas gigantes em Bamyan;1
--Castelo de Obidos;9/17;um dos castelos mais bonitos de portugal que terá sido inicialmente construido por arabes;1
--Lagoa de Obidos;NE;sistema lagunar mais extenso da costa portuguesa e faz fronteira com o concelho de Caldas da Rainha;1
--Museu Abilio;10/18;museu dedicado a obra do artista portugues que cresceu e passou o resto da sua vida em obidos;0
->
-<Lagos;5:
--Castelo de Lagos;NE;tambem conhecido como castelo dos Governadores onde já foi estabelecida a sede do governo militar;1
--Igreja de Santo António;9:30/17:30;mesmo após a sua reconstrução no século XVIII continua a ser um dos maiores tesouros do sul do pais;1
--Museu de Cera dos Descobrimentos;10/18;museu que nos permite recuar no tempo e viver no tempo dos descobrimentos tal como os nossos navegadores o viveram;1
--Praia dos Estudantes;NE;praia delimitada por grandes penhascos nos quais foram escavados túneis à mão e construída uma ponte entre eles;1
--Xscape-It;10:30/23:45;a primeira ‘escape room’ no algarve que promete uma aventura aterradora;1
->
-<Guimaraes;5:
--Castelo de Guimaraes;10/18;castelo nasceu e viveu o primeiro rei de portugal;1
--Largo do Toural;NE;consiferado o coracao da cidade é uma das pracas mais importantes de Guimaraes;1
--Paco dos Duques de Braganca;10/18;monumento nacional onde viveram os duqes de braganca e onde se podem ver expostas varias reliquias da epoca dos Descobrimentos Portugueses;1
--Padrao do Salado;NE;padrao comemorativo da batalha do Salado localizado numa das zonas mais antigas da cidade;1
--Santuario da Penha;9/18;uma obra emblematica de guimaraes com uma singular beleza e valia religiosa;0
 >
 <Faro;5:
 -Zoomarine;10/18;um parque aquático temático com exibições e espetáculos;2
--Ilha Deserta;NE;uma ilha deserta, tal como o nome indica, com a praia da barreta;1
--Islands 4 You;9/19:30;passeios de barco pela ria formosa;1
 -Marina de Faro;NE;um dos portos mais conhecidos do sul do país com animação para toda a família;1
+-Islands 4 You;9/19:30;passeios de barco pela ria formosa;1
+-Ilha Deserta;NE;uma ilha deserta, tal como o nome indica, com a praia da barreta;1
 -Se de Faro;10:15/18:30;Se com uma juncao de estilos arquitetonicos influentes na area ao longo do tempo;0
+>
+<Guimaraes;5:
+-Padrao do Salado;NE;padrao comemorativo da batalha do Salado localizado numa das zonas mais antigas da cidade;1
+-Paco dos Duques de Braganca;10/18;monumento nacional onde viveram os duqes de braganca e onde se podem ver expostas varias reliquias da epoca dos Descobrimentos Portugueses;1
+-Largo do Toural;NE;consiferado o coracao da cidade é uma das pracas mais importantes de Guimaraes;1
+-Castelo de Guimaraes;10/18;castelo nasceu e viveu o primeiro rei de portugal;1
+-Santuario da Penha;9/18;uma obra emblematica de guimaraes com uma singular beleza e valia religiosa;0
+>
+<Lagos;5:
+-Xscape-It;10:30/23:45;a primeira ‘escape room’ no algarve que promete uma aventura aterradora;1
+-Praia dos Estudantes;NE;praia delimitada por grandes penhascos nos quais foram escavados túneis à mão e construída uma ponte entre eles;1
+-Museu de Cera dos Descobrimentos;10/18;museu que nos permite recuar no tempo e viver no tempo dos descobrimentos tal como os nossos navegadores o viveram;1
+-Igreja de Santo António;9:30/17:30;mesmo após a sua reconstrução no século XVIII continua a ser um dos maiores tesouros do sul do pais;1
+-Castelo de Lagos;NE;tambem conhecido como castelo dos Governadores onde já foi estabelecida a sede do governo militar;1
+>
+<Obidos;5:
+-Lagoa de Obidos;NE;sistema lagunar mais extenso da costa portuguesa e faz fronteira com o concelho de Caldas da Rainha;1
+-Castelo de Obidos;9/17;um dos castelos mais bonitos de portugal que terá sido inicialmente construido por arabes;1
+-Buddha Eden;9/18;maior jardim oriental da europa criado como forma de protesto contra a destruição de budas gigantes em Bamyan;1
+-Aqueduto de Obidos;NE;tambem conhecido como aqueduto da Usseira, representa mais uma das marcas da presenca romana em Portugal;1
+-Museu Abilio;10/18;museu dedicado a obra do artista portugues que cresceu e passou o resto da sua vida em obidos;0
+>
+<Parque Nacional Peneda Geres;4:
+-Serra do Geres;NE;uma das serras pertencentes ao parque com belas vistas e paisagens a recordar;1
+-Santuario da Nossa Senhora da Peneda;NE;santuario dedicado a virgem maria sob a acao da nossa senhora da peneda;1
+-7 lagoas;NE;umas das lagoas mais bonitas e mais bem guardadas do famosos parque;1
+-Castelo de Lindoso;10:30/17;um dos monumentos militares mais importantes de Portugal dada a sua localizacao estrategica;0
+-Cascata da Portela do Homem;NE;cascata localizada perto da freguesia da Portela do Homem;0
 >
 <Fatima;4:
 -Museu de Cera de Fatima;9:30/18:30;museu com figuras de cera que retrata a historia de jesus contada na biblia e das aparicoes de Fatima aos 3 pastorinhos;2
--Casa de Lucia;9/18;casa onde nasceu e viveu a irmã lucia, um dos pastorinhos presente nas aparicoes de Fatima;1
--Grutas de Mira de Aire;9:30/18;visita a uma das 7 maravilhas naturais de Portugal;1
--Parque Natural da Serra de Aire e Candeeiros;NE;duas das serras mais conhecidas e que mais vale a pena visitar em portugal;1
 -Santuario de Fatima;NE;o destino final das peregrinacoes portuguesas fomentada nas aparicoes de nossa senhora de fatima aos pastorinhos;1
->
-<Parque Nacional Peneda Geres;4:
--7 lagoas;NE;umas das lagoas mais bonitas e mais bem guardadas do famosos parque;1
--Santuario da Nossa Senhora da Peneda;NE;santuario dedicado a virgem maria sob a acao da nossa senhora da peneda;1
--Serra do Geres;NE;uma das serras pertencentes ao parque com belas vistas e paisagens a recordar;1
--Cascata da Portela do Homem;NE;cascata localizada perto da freguesia da Portela do Homem;0
--Castelo de Lindoso;10:30/17;um dos monumentos militares mais importantes de Portugal dada a sua localizacao estrategica;0
->
-<Evora;3:
--Capela dos Ossos;9/18:30;um destino macabro proveniente do estilo barroco;1
--Catedral de Evora;9/17; edificio imponente todo em granito de onde se obtem um dos pontos mais altos da cidade ao subir a torre;1
--Praca do Giraldo;NE;onde todos os caminhos em Evora vão dar, seja pelas arcadas, seja pelos caminhos calcetados da cidade;1
--Templo de Diana;NE;um icone da cidade e dos poucos vestigios da ocupacao romana em portugal que se manteve ao longo do tempo;1
--Muralhas;NE;as grandes muralhas que separam a parte antiga e a parte moderna da cidade;0
->
-<Cascais;3:
--Boca do Inferno;NE;formacao unica a beira da praia de cascais;1
--Casa das Historias Paula Rego;10/18h;museu de arte com a obra da artista portuguesa;1
--Monte Estoril;NE;zona mais alta e luxuosa de cascais e estoril;1
--Praia de Carcavelos;NE;praia mais popular da zona de lisboa com magnificas intalacoes;1
--Marina de Cascais;NE;espaço nobre de lazer e conforto a todos o que o vivenciam;0
+-Parque Natural da Serra de Aire e Candeeiros;NE;duas das serras mais conhecidas e que mais vale a pena visitar em portugal;1
+-Grutas de Mira de Aire;9:30/18;visita a uma das 7 maravilhas naturais de Portugal;1
+-Casa de Lucia;9/18;casa onde nasceu e viveu a irmã lucia, um dos pastorinhos presente nas aparicoes de Fatima;1
 >
 <Terceira;3:
--Algar do Carvao;14/18;o maior vulcao do mundo que pode ser visitado no seu interior proporcionando vistas unicas e historias sobre a formacao da ilha;1
--Monte Brasil;NE;monte situado em angra do heroismo com grande biodiversidade e animacao;1
--Furnas do Enxofre;NE;campo onde ainda se da a saida de certos gases a elevadas temperaturas da terra devido a atividade vulcanica;1
--Gruta do Natal;14:30/17:15;ganhou o nome devido a celebracao de uma missa alguns anos atras;1
 -Whale Watching;NE;marque o seu passeio de barco com a "Whale Watching" e tenha a oportunidade de avistar baleias, golfinhos, e até algumas tartarugas;1
+-Gruta do Natal;14:30/17:15;ganhou o nome devido a celebracao de uma missa alguns anos atras;1
+-Furnas do Enxofre;NE;campo onde ainda se da a saida de certos gases a elevadas temperaturas da terra devido a atividade vulcanica;1
+-Monte Brasil;NE;monte situado em angra do heroismo com grande biodiversidade e animacao;1
+-Algar do Carvao;14/18;o maior vulcao do mundo que pode ser visitado no seu interior proporcionando vistas unicas e historias sobre a formacao da ilha;1
+>
+<Cascais;3:
+-Praia de Carcavelos;NE;praia mais popular da zona de lisboa com magnificas intalacoes;1
+-Monte Estoril;NE;zona mais alta e luxuosa de cascais e estoril;1
+-Casa das Historias Paula Rego;10/18h;museu de arte com a obra da artista portuguesa;1
+-Boca do Inferno;NE;formacao unica a beira da praia de cascais;1
+-Marina de Cascais;NE;espaço nobre de lazer e conforto a todos o que o vivenciam;0
+>
+<Evora;3:
+-Templo de Diana;NE;um icone da cidade e dos poucos vestigios da ocupacao romana em portugal que se manteve ao longo do tempo;1
+-Praca do Giraldo;NE;onde todos os caminhos em Evora vão dar, seja pelas arcadas, seja pelos caminhos calcetados da cidade;1
+-Catedral de Evora;9/17; edificio imponente todo em granito de onde se obtem um dos pontos mais altos da cidade ao subir a torre;1
+-Capela dos Ossos;9/18:30;um destino macabro proveniente do estilo barroco;1
+-Muralhas;NE;as grandes muralhas que separam a parte antiga e a parte moderna da cidade;0
 >
 <Pico;2:
--Centro de Artes e de Ciencias do mar;9/18;centro instalado na antiga fabrica da baleia onde e possivel ver diversos equipamentos industriais;1
--Lagoa do Peixinho;NE;localizada no planalto mais central da ilha;1
 -Ponta da Queimada;NE;um dos miradouros da ilha com uma bela vista para o oceano;1
--Montanha do Pico;NE;montanha mais alta do pais a qual se pode subir para ter uma vista sobre a ilha;0
+-Lagoa do Peixinho;NE;localizada no planalto mais central da ilha;1
+-Centro de Artes e de Ciencias do mar;9/18;centro instalado na antiga fabrica da baleia onde e possivel ver diversos equipamentos industriais;1
 -Museu dos Baleeiros;10/17:30;museu sobre a historia dos baleeiros e a sua atividade na ilha ao longo dos anos;0
->
-<Silves;1:
--Castelo de Silves;9/22;uma obra notavel de arquitetura militar que nos foi levado pelos arabes;0
--Cruz de Portugal;NE;das mais belas pecas de arte relativas ao tempo do gotico em portugal;0
--Museu Municipal de Arqueologia de Silves;10/18;das mais belas pecas de arte relativas ao tempo do gotico em portugal;0
--Quinta de Mata Mouros;10/18;museu que passa em revista a historia do algarve e em especial a de silves;0
--Se de Silves;9/17;construida com arenito vermelho constitui mais um marco do gotico em portugal;0
+-Montanha do Pico;NE;montanha mais alta do pais a qual se pode subir para ter uma vista sobre a ilha;0
 >
 <Tavira;1:
--Centro de Ciencia Viva de Tavira;10/18;espaco interativo que se explora temas ligados a energia e a agua;1
--Igreja de Santa Maria do Castelo;10/17;igreja matriz da cidade que ha de ter sido construida apos a conquista de tavira aos mouros;1
--Ilha de Tavira;NE;ilha deserta e arenosa que onde tambem podemos encontrar a praia do barril;1
 -Mercado Municipal de Tavira;7/16;mercado municipal com fruta e alimentos de excelente qualidade;1
+-Ilha de Tavira;NE;ilha deserta e arenosa que onde tambem podemos encontrar a praia do barril;1
+-Igreja de Santa Maria do Castelo;10/17;igreja matriz da cidade que ha de ter sido construida apos a conquista de tavira aos mouros;1
+-Centro de Ciencia Viva de Tavira;10/18;espaco interativo que se explora temas ligados a energia e a agua;1
 -Castelo de Tavira;8/17;apesar de ja ter sofrido varias alteracoes ao longo do tempo por diferentes povos continua um marco da cidade a visitar;0
 >
-<Sao Miguel;0:
--Poca da Dona Beija;7/23;piscinas termais beneficas para a saude e que tambem sao um bom sitio de relaxamento;2
--Farol da Ponta do Arnel;13/16:30;primeiro farol a ser instalado no arquipelago dos acores;1
--Gruta do Carvao;10/18;grutas com uma origem vulcanica;1
--Lagoa das Furnas;NE;lagoa relacionada com a atividade vulcanica rodeada de vegetacao, fauna e flora;1
--Lagoa das Sete Cidades;NE;um dos pontos com maior interesse do arquipelago no qual as lagoas com aguas de diferentes cores deram origem a uma lenda popular;1
+<Silves;1:
+-Se de Silves;9/17;construida com arenito vermelho constitui mais um marco do gotico em portugal;0
+-Quinta de Mata Mouros;10/18;museu que passa em revista a historia do algarve e em especial a de silves;0
+-Museu Municipal de Arqueologia de Silves;10/18;das mais belas pecas de arte relativas ao tempo do gotico em portugal;0
+-Cruz de Portugal;NE;das mais belas pecas de arte relativas ao tempo do gotico em portugal;0
+-Castelo de Silves;9/22;uma obra notavel de arquitetura militar que nos foi levado pelos arabes;0
 >
 <Sintra;0:
 -Castelo dos Mouros;9:30/20;um castelo atualmente em ruinas que em tempos serviu para defender a cidade de sintra;2
--Parque e Palacio Nacional da Pena;9:30/20;um dos pontos de maior interesse em portugal, revelando varias misturas de diferentes estilos arquitetonicos;1
--Quinta da Regaleira;9:30/19;um dos mais surpreendentes pontos turisticos da cidade, sendo o seu jardim uma representação do microcosmo;1
 -Serra de Sintra;NE;a famosa serra a qual ninguem escapa com o seu misterio e com a sua beleza natural;1
+-Quinta da Regaleira;9:30/19;um dos mais surpreendentes pontos turisticos da cidade, sendo o seu jardim uma representação do microcosmo;1
+-Parque e Palacio Nacional da Pena;9:30/20;um dos pontos de maior interesse em portugal, revelando varias misturas de diferentes estilos arquitetonicos;1
 -Cabo da Roca;NE;e considerado o ponto mais ocidental de portugal e da europa continental, sendo visitavel ate um dado limite para prevenir possiveis acidentes;0
+>
+<Sao Miguel;0:
+-Poca da Dona Beija;7/23;piscinas termais beneficas para a saude e que tambem sao um bom sitio de relaxamento;2
+-Lagoa das Sete Cidades;NE;um dos pontos com maior interesse do arquipelago no qual as lagoas com aguas de diferentes cores deram origem a uma lenda popular;1
+-Lagoa das Furnas;NE;lagoa relacionada com a atividade vulcanica rodeada de vegetacao, fauna e flora;1
+-Gruta do Carvao;10/18;grutas com uma origem vulcanica;1
+-Farol da Ponta do Arnel;13/16:30;primeiro farol a ser instalado no arquipelago dos acores;1
 >

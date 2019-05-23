@@ -63,7 +63,7 @@ int verifica_especial(char* nome,int len){
 
 Lista_Registo ler_fich_registo(Lista_Registo reg){
     FILE *f;
-    char nome[50],cidade[50],data[12],telemovel[11],string[100];
+    char nome[50],cidade[50],data[12],telemovel[10],string[100];
     int dia,ano,mes;
     f=fopen(txtr,"r");
     while(fscanf(f,"%[^\n]\n",string)!=EOF){
@@ -76,7 +76,7 @@ Lista_Registo ler_fich_registo(Lista_Registo reg){
         memset(nome,0,50);
         memset(cidade,0,50);
         memset(data,0,12);
-        memset(telemovel,0,11);
+        memset(telemovel,0,10);
         memset(string,0,100);
     }
     fclose(f);
@@ -245,7 +245,7 @@ void write_reg(Lista_Registo reg){
         fprintf(f,"%d",registo->date.ano);
         fputs(";", f);
         fputs(registo->telemovel, f);
-        fputs(" \n", f);
+        fputs("\n", f);
         registo = registo->next;
     }while(registo!=NULL);
     fclose(f);
